@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>ElephantsAndMice</title>
+<!-- write your code here -->
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="ElephantsAndMice.js"></script>
+<script>
+// Global Scripts
+	function advance() {
+	//SoundMixer.stopAll();
+	createjs.Sound.stop();
+	//this.play();
+	this.gotoAndStop(this.currentFrame + 1);
+	console.log("Frame: " + this.currentFrame + " catch advance");	
+}
+function sameframe() {
+	//SoundMixer.stopAll();
+	createjs.Sound.stop();
+	mc.play();
+	console.log("Frame: " + this.currentFrame + " catch restart frame");	
+}
+function reverse() {
+	//SoundMixer.stopAll();
+	createjs.Sound.stop();
+	this.gotoAndStop(this.currentFrame - 1);
+	console.log("Frame: " + this.currentFrame + " catch reverse");	
+}
+function startAll() {
+	this.gotoAndStop("LandingSlide");	
+	console.log("startAll");	
+}
+function startStory() {
+	this.gotoAndStop("ContentSlide01");	
+	console.log("startStory");	
+}
+function finishStory() {
+	this.gotoAndStop("QuestionSlide");
+	console.log("finishStory");
+}
+function rightAnswer() {
+	this.gotoAndStop("PositiveSlide");
+}
+function wrongAnswer() {
+	this.gotoAndStop("NegativeSlide");
+}
+function showControlNS_P() {
+	this.btn_next.visible = true;
+	this.btn_same.visible = true;
+	this.btn_prev.visible = false;	
+}
+function showControlNSP() {
+	this.btn_next.visible = true;
+	this.btn_same.visible = true;
+	this.btn_prev.visible = true;	
+}
+function showControlNSPF() {
+	this.btn_next.visible = false;
+	this.btn_same.visible = true;
+	this.btn_prev.visible = true;	
+	this.btn_finish.visible = true;
+}
+function closeWindow() {
+	fscommand("quit");
+}</script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("75DB4C1C6DD5624BB5376A5B019B1652");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.installPlugin(createjs.Sound);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.storybook_remaster_HTML5();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.framerate = lib.properties.fps;
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+function playSound(id, loop, offset) {
+	return createjs.Sound.play(id, {'interrupt':createjs.Sound.INTERRUPT_EARLY, 'loop': loop, 'offset': offset});}
+</script>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px;">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:960px; height:540px">
+		<canvas id="canvas" width="960" height="540" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:960px; height:540px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+</body>
+</html>

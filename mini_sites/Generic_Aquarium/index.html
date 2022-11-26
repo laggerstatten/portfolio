@@ -1,0 +1,294 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Generic Aquarium (Eric Schall Week 11)</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Passion+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+	<style>
+		main {
+			margin: auto; 
+			min-width: 650px;
+			}
+
+		header, footer {
+			margin: auto; 
+			min-width: 650px; 
+			min-height: 400px;
+			background: transparent !important;
+			text-align: center; 
+			padding: 10px;
+			}
+			
+		main > div, main > section {
+			margin: auto;
+			width: 80%;
+			max-width: 90em;
+			padding-top: 50px;
+			}
+
+		p {
+			font-family: 'Raleway', sans-serif;
+			}
+			
+			
+		main a, figcaption {
+			font-family: 'Oswald', sans-serif;
+			text-decoration: none;
+			color: black;
+			}
+
+		h2 {
+			font-family: 'Passion One', cursive;
+			color: blue;
+			letter-spacing: 2px;
+			}	
+
+		blockquote {
+			font-family: 'Raleway', sans-serif;
+			background: lightcyan;
+			border-left: 10px solid blue;
+			margin: 2em 20px;
+			padding: 1em 20px;
+			width: 50%;
+		}
+
+		main > div > div, section {
+			overflow: hidden;
+			margin: auto;
+			max-width: 60em;
+		}
+		
+		.hero {
+			margin: 0%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			padding-top: 10px;
+			padding-bottom: 100px;
+			max-height: 400px;
+			background-image: url("photos/aquarium-8NT62SE.jpg");
+			background-size: cover;
+			}
+		
+		/* tranparent bg on navbar */
+		.navbar, .heroname h1 {
+			margin-right: 0;
+			margin-left: 0;
+			background: transparent !important;
+			}			
+		
+		.navbar {
+			overflow: hidden;
+			padding-right: 40px;
+			}		
+			
+		.navbar	li {
+			display: inline;
+			}
+		
+		.heroname h1 {
+			font-family: 'Passion One', cursive;
+			padding-top: 100px;
+			color: white;
+			font-size: 60px;
+			letter-spacing: 5px;
+			}		
+		
+		.navbar a {
+			float: right;
+			text-align: center;
+			padding: 20px 20px;
+			color: white;
+			font-family: 'Oswald', sans-serif;
+			text-decoration: none;
+			font-size: 20px;
+			}
+
+		/* animations applied here */
+		.navbar a:hover {
+			color: red;
+			animation-name: bounceOnEnter, bounceOnHover;
+			animation-delay: 0s, 2s;
+			animation-duration: 2s, 1s;
+			animation-iteration-count: 1, infinite;
+			}
+
+		@keyframes bounceOnEnter {
+		  0% {transform: translate(0, 0); color: black;}
+		  30% {transform: translate(30px, -10px);}	  
+		  40% {transform: translate(30px, 0px);}	
+		  50% {transform: translate(30px, -10px);}	  
+		  60% {transform: translate(35px, -5px);}	
+		  70% {transform: translate(30px, -5px); color: red;}
+		  80% {transform: translate(-10px, 5px);}	  
+		  100% {transform: translate(0px, 0px);}
+			}
+		
+		@keyframes bounceOnHover {
+		  0% {transform: translate(0, 0);}
+		  50% {transform: translate(5px, -5px);}	  	  
+		  100% {transform: translate(0px, 0px);}
+			}
+			
+		.figright {
+			float: right;
+			width: 30%;
+			padding-left: 5%;
+			}
+
+		.figleft {
+			float: left;
+			width: 30%;
+			padding-right: 5%;
+			}		
+
+		.figright img, .figleft img {
+			object-fit: cover;
+			width: 100%;
+			transform: rotate(20deg);
+			padding-top: 10%;
+			padding-bottom: 10%;
+			}
+
+		.figright video, .figleft video {
+			object-fit: cover;
+			width: 100%;
+			padding-top: 10%;
+			padding-bottom: 10%;
+			}
+
+
+
+		/* I could have done this with JS, but wanted to see what HTML/CSS solution would look like */
+		.hide {display: none;}		
+		#linkDecaturAL:hover ~ #DecaturAL {display: block;}
+		#linkChattanoogaTN:hover ~ #ChattanoogaTN {display: block;}		
+
+
+	</style>
+</head>
+<body>
+<header>
+	<div class="hero">
+		<div class="navbar">
+		<ul>
+		  <li><a href="#visit">Plan A Visit</a></li>
+		  <li><a href="#imax">IMAX</a></li>
+		  <li><a href="#explore">Explore</a></li>
+		  <li><a href="#conserve">Conserve</a></li>
+		  <li><a href="#educate">Educate</a></li>
+		  <li><a href="#members">Members</a></li>	
+		</ul>
+		</div>		
+		
+		
+		<div class="heroname">
+			<h1>Generic Aquarium</h1>
+		</div>
+	</div>
+</header>
+<main>
+	<div>
+		<section>
+		<h2>Inspiration</h2>
+		
+		<figure class="figright">
+			<video width="320" height="240" autoplay muted loop>
+			<source src="photos/tnaquanavbar.mp4" type="video/mp4">
+			</video>
+			<figcaption>Tennessee Aquarium Nav Bar</figcaption>
+		</figure>
+		
+		<p>I'm working out of <a href="https://goo.gl/maps/Xx6w7hJi8uBQASAt8" id="linkDecaturAL" target="_blank">northern Alabama <span class="fa fa-map"> </span></a> this week, 
+			and visited the Tennessee Aquarium in <a href="https://goo.gl/maps/LDrbSmY7To2hDLUP6" id="linkChattanoogaTN" target="_blank">Chattanooga <span class="fa fa-map"> </span></a>. 
+			I tend to visit a lot of zoos and aquaria, so naturally I make note of ones with good websites as well. The <a href="https://tnaqua.org/" target="_blank">Tennessee Aquarium website</a> is one of these.
+		<iframe id="DecaturAL" class="hide" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d210120.85651990445!2d-86.95554508011439!3d34.62594309622165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1619125444217!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<iframe id="ChattanoogaTN" class="hide" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d209082.16185492766!2d-85.26021732132538!3d35.03401191190003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1619126743436!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</p>
+		
+		<p>I'm happy to note that the Tennessee Aquarium does have some animation effects on their horizontal nav bar (when viewed on a desktop). 
+			When the user hovers over a nav item (such as "plan a visit"), the nav item text changes color, slowly bounces a bit, and an effect occurs emanating from the cursor. 
+			I think this is a nice subtle but noticeable effect.</p>
+		
+		<p>I spent way too long in Chrome trying to figure out how they accomplished this. I appreciate the work we're doing in this course, 
+			but the department really needs a <em>"how to use Chrome developer tools to reverse-engineer a website"</em> course. 
+			I think we've both been in the industry long enough to know that often our guidance is <em>"the program manager for XYZ saw this on somebody else's website -- 
+				we need to do something similar but better on ours"</em>.</p>
+	
+		<p>I don't think many of us are building websites from scratch. In my current role, I'm building "HubSites" within ESRI's ArcGIS Online environment. 
+			This is a low-code platform based on Bootstrap where I can choose to expose and edit the HTML and CSS (but not JS). </p>
+		
+		<p>As I'm writing this, I decided to do a deep dive<sup><a href="#footnote-1">[1]</a></sup> and see who built the Tennessee Aquarium's website. 
+			It's <a href="https://www.whiteboard.is/" target="_blank">Whiteboard</a> out of Chattanooga, and there is even 
+			<a href="https://www.whiteboard.is/blog/tennessee-aquarium-featured-in-communication-arts" target="_blank">an interview</a> on their design process.</p>
+		
+		<div>
+		<p>I'll quote in full the last paragraph: </p>
+		
+		<blockquote>"'The website was built in WordPress while harnessing powerful tools, such as Advanced Custom Fields Pro, Timber (for Twig integration), Bedrock and Lumberjack,' says Brett Bash. 
+			'This enables the WordPress CMS to have a modular, modern MVC framework structure similar to Laravel. The front end uses Vue.js for the JavaScript framework, 
+			GreenSock for animations and Tailwind CSS for all of the styling.'</blockquote>
+		</div>
+		</section>
+		
+		<section>
+		<h2>My Design Process</h2>
+		
+		<p>For my design process, I started with the transitions and transformations, since they are the core of this week's assignment. 
+			I wanted an effect that would be very noticable on mouse-enter, but persist while the cursor was over the link. There are ways to do this with JS, 
+			but in CSS I had to do this by adding a second animation with a delay as long as the first animation. I made the link text bounce a bit and change color, and then continue subtly bouncing.</p>
+		
+		<p>I went to Google Fonts and found 3 fonts recommended for use together. I used CSS to apply these to the different elements on the page. 
+			I used Envato Elements to find a few photos available for my use, and chose text colors that looked good over them.</p>
+		
+		<p>On many of the websites I visit, the nav bar is placed over the hero photo. I tried to accomplish this with HTML and CSS, and spent way too long messing with position: absolute 
+			and z-index and a whole lot of other CSS properties. In reality, nobody is composing websites from scratch like this. In a real production environment, 
+			a new employee fresh out of school who is tasked with building a website is not going to succeed if they try building a website from scratch. 
+			They need to understand how to use the industry-standard / market-leader platforms that are in use. I appreciate that an understanding of web language fundamentals is beneficial, 
+			but I wonder if the primary focus should be on WordPress, knowing that web designers/developers will pick up HTML and CSS on the job.</p>
+		
+		<p>For my navbar, I wanted it to start from the upper right corner. I applied padding-right to ensure the animation would not go off screen. 
+			I added a transparent background so that it would overlay the hero photo. I made the default color for the link text white, set the font size, and added padding above and below. 
+			I removed the underline. On hover, the link text turns red, and the transformation makes this a gradual change.</p>
+		
+		<figure class="figleft">
+			<img src="photos/divsallthewaydown.jpg">
+			<figcaption>It's Divs All the Way Down<br>(at least 7 levels in this screenshot)</figcaption>
+		</figure>
+		
+		<p>I originally made the navbar with just a div and a elements, so I had to go back and change it to use ul and li. 
+			This was likely an unneccesary requirement. I know earlier in the semester we discussed using semantic elements versus using divs (their use was derided as "divitis"). 
+			Go do an inspect on any professional website and see how many are using divs versus "section" and "article". Spoiler alert: it's "divs all the way down".</p>
+		
+		<p>Neither technique from WCAG which addresses semantic elements mentions sections or articles: 
+			<a href="https://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G115" target="_blank">G115</a>, <a href="https://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G140" target="_blank">G140</a>. 
+			None of the three resources linked in Week 1 do a very good job explaining the "why" behind semantic elements, and in fact I think they are counterproductive. 
+			They seem to suggest that one could build a real modern public-facing website with all divs replaced by semantic elements. This would likely be even worse for accessibility, 
+			as now a screenreader is presented with dozens of unneccesary sections and articles coded by a well-meaning developer trying to avoid "divitis".</p> 
+		
+		<p>I did set links to open in new tabs. We just had this discussion at work, and the decision was against this, 
+			citing <a href=https://www.w3.org/TR/WCAG20-TECHS/G200.html target="_blank">WCAG.</a></p>
+	
+		</section>
+		<div>
+			<div style="padding-top: 100px;">
+				<p id="footnote-1">[1] The aquarium building itself is a very clever design as well -- 
+					it's from <a href="https://www.cambridgeseven.com/project/tennessee-aquarium/" target="_blank">Cambridge Seven Associates</a>. 
+				</p>
+			</div>
+		</div>
+	</div>
+			
+
+</main>
+<footer>
+	<p>Eric Schall | April 2021</p>
+</footer>
+</body>
