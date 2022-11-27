@@ -24,22 +24,31 @@ class Header extends HTMLElement {
                 <!-- Main Menu START -->
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav navbar-nav-scroll mx-auto">
-                        
-                        <!-- Menu item 3 Portfolio -->
-                        <li class="nav-item dropdown dropdown-fullwidth">
-                            <a class="nav-link dropdown-toggle" href="#" id="portfolioMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                            <div class="dropdown-menu" aria-labelledby="portfolioMenu">
+                        <!-- Menu item 1 Main -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="mainMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Main</a>
+                            <div class="dropdown-menu pb-3 pb-lg-0" aria-labelledby="mainMenu">
                                 <div class="container">
                                     <div class="row g-0 flex-fill">
                                         <div class="col-sm-6 col-lg-3">
                                             <ul class="list-unstyled mb-4 mb-lg-0">
-                                                <li class="dropdown-header"> </li>
+                                                <li class="dropdown-header">Main</li>
                                                 <li> <a class="dropdown-item" href="../index.html">Home</a> </li>
                                                 <li> <a class="dropdown-item" href="../portfolio.html">Portfolio</a> </li>
                                                 <li> <a class="dropdown-item" href="../design_timeline.html">Design Timeline</a> </li>
                                                 <li> <a class="dropdown-item" href="../about_me.html">About Me</a> </li>
                                             </ul>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Menu item 2 Featured -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="featuredMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Featured</a>
+                            <div class="dropdown-menu pb-3 pb-lg-0" aria-labelledby="featuredMenu">
+                                <div class="container">
+                                    <div class="row g-0 flex-fill">
                                         <div class="col-sm-6 col-lg-3">
                                             <ul class="list-unstyled mb-4 mb-lg-0">
                                                 <li class="dropdown-header">Featured Projects</li>
@@ -54,6 +63,16 @@ class Header extends HTMLElement {
                                                 <li> <a class="dropdown-item" href="../project_detail/Elephants_And_Mice.html">Elephants & Mice</a> </li>
                                             </ul>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> 
+                        <!-- Menu item 3 Portfolio -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="portfolioMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                            <div class="dropdown-menu pb-3 pb-lg-0" aria-labelledby="portfolioMenu">
+                                <div class="container">
+                                    <div class="row g-0 flex-fill">
                                         <div class="col-sm-6 col-lg-3">
                                             <ul class="list-unstyled mb-4 mb-lg-0">
                                                 <li class="dropdown-header">Portfolio by Discipline</li>
@@ -63,12 +82,6 @@ class Header extends HTMLElement {
                                                 <li> <a class="dropdown-item" href="../discipline/studio_art_projects.html">Studio Art</a> </li>
                                             </ul>
                                         </div>
-                                        <div class="col-sm-6 col-lg-3">
-                                            <ul class="list-unstyled">
-                                                <li class="dropdown-header">Portfolio hover & Element</li>
-                                                <li> <a class="dropdown-item" href="portfolio-classic-grid-3-col.html">Hover: Classic</a> </li>
-                                            </ul>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -76,15 +89,7 @@ class Header extends HTMLElement {
                     </ul>
                 </div>
                 <!-- Main Menu END -->
-    
-                <!-- Nav right START -->
-                <div class="nav flex-nowrap align-items-center">
-                    <!-- Nav Button -->
-                    <div class="nav-item d-none d-xl-block">
-                        <a href="#" class="btn btn-sm btn-primary mb-0 ms-2">Get Quote!</a>
-                    </div>
-                </div>
-                <!-- Nav right END -->
+
             </div>
         </nav>
         <!-- Logo Nav END -->
