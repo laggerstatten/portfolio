@@ -21,10 +21,6 @@
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-    <style>
-        .error {color: #FF0000;}
-    </style>
 	
 	<!-- Headers & Footers -->
 	<script src="components/main_header.js" type="text/javascript" defer></script>
@@ -148,55 +144,42 @@ Contact form START -->
 			<!-- Form -->
 			<div class="col-lg-9">
 				<!-- Form START -->
-				<form class="contact-form form-line" id="contact-form" name="contactform" method="post" action="assets/include/contact-action2.php">  
+				<form class="contact-form form-line" id="contact-form" name="contactform" method="POST" action="assets/include/contact-action.php">
 					<!-- Main form -->
-						<div class="row">
-							<div class="col-md-6">
-								<!-- name -->
-								<div class="mb-3 position-relative">
-									<input required id="con-name" type="text" class="form-control" name="name" placeholder="Name">
-									<span class="focus-border"></span>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<!-- email -->
-								<div class="mb-3 position-relative">
-									<input required id="con-email" type="text" class="form-control" name="email" placeholder="E-mail">
-									<span class="focus-border"></span>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<!-- Subject -->
-								<div class="mb-3 position-relative">
-									<input required id="con-subject" type="text" class="form-control" name="website" placeholder="Subject"> <!-- change back to subject-->
-									<span class="focus-border"></span>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<!-- Terms -->
-								<div class="mb-3 position-relative">
-									<input id="con-terms" type="checkbox" name="terms" value="agreed">Yes, I agree to the terms of this site.
-									<span class="focus-border"></span>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<!-- Message -->
-								<div class="mb-3 position-relative">
-									<textarea required id="con-message" name="comment" rows="6" cols="40" class="form-control" placeholder="Message"></textarea><!-- change back to message-->
-									<span class="focus-border"></span>
-								</div>
-							</div>
-							<div class="col-md-12 text-start">
-								<!-- submit button -->
-								<div class="mb-3 position-relative">
-									<input class="btn btn-primary btn-line" type="submit" name="submit" value="Send Message"> 
-									<span class="focus-border"></span>
-								</div>
+					<div class="row">
+						<div class="col-md-6">
+							<!-- name -->
+							<div class="mb-3 position-relative">
+								<input required id="con-name" name="name" type="text" class="form-control" placeholder="Name">
+								<span class="focus-border"></span>
 							</div>
 						</div>
-				  </form>
+						<div class="col-md-6">
+							<!-- email -->
+							<div class="mb-3 position-relative">
+								<input required id="con-email" name="email" type="email" class="form-control" placeholder="E-mail">
+								<span class="focus-border"></span>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<!-- Subject -->
+							<div class="mb-3 position-relative">
+								<input required id="con-subject" name="subject" type="text" class="form-control" placeholder="Subject">
+								<span class="focus-border"></span>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<!-- Message -->
+							<div class="mb-3 position-relative">
+								<textarea required id="con-message" name="message" cols="40" rows="6" class="form-control" placeholder="Message"></textarea>
+								<span class="focus-border"></span>
+							</div>
+						</div>
+						<!-- submit button -->
+						<div class="col-md-12 text-start"><button class="btn btn-primary btn-line" type="submit">Send Message</button></div>
+					</div>
+				</form>
 				<!-- Form END -->
-
 			</div>
 		</div> <!-- Row END -->
 	</div>
