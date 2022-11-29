@@ -36,7 +36,8 @@ class Header extends HTMLElement {
                                                 <li> <a class="dropdown-item" href="../index.html">Home</a> </li>
                                                 <li> <a class="dropdown-item" href="../portfolio.html">Portfolio</a> </li>
                                                 <li> <a class="dropdown-item" href="../design_timeline.html">Design Timeline</a> </li>
-                                                <li> <a class="dropdown-item" href="../about_me.html">About Me</a> </li>
+                                                <li> <a class="dropdown-item" href="../aboutme.html">About Me</a> </li>
+                                                <li> <a class="dropdown-item" href="../contact.html">Contact Me</a> </li>
                                             </ul>
                                         </div>
                                     </div>

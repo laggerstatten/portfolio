@@ -48,9 +48,16 @@ class Offcanvas extends HTMLElement {
 
                             <!-- Nav item -->
                             <li class="nav-item d-block d-md-flex mb-2">
-                                <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="about_me.html">About Me</a></h5>
+                                <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="aboutme.html">About Me</a></h5>
                                 <p class="align-self-center mt-0 mt-md-5">— who am I?</p>
                             </li>
+
+                            <!-- Nav item -->
+                            <li class="nav-item d-block d-md-flex mb-2">
+                                <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="contact.html">Contact Me</a></h5>
+                                <p class="align-self-center mt-0 mt-md-5">— talk to me</p>
+                            </li>
+
 
                         </ul>
                         <!-- Offcanvas Menu END -->

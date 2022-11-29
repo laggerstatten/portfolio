@@ -8,7 +8,7 @@
 
     // Please replace your email address below in $recip_address field to start receiving form responses.
 
-    $recip_address = "info@yourdomain.com";
+    $recip_address = "eschall@my.lonestar.edu";
 
     // If you want to add multiple recipient, then you should uncomment two lines that are line no. 14 and 39. Change your e-mail ID in line no. 14
     //$recip_address1 = "info1@yourdomain.com"; 
