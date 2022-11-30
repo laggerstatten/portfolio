@@ -7,8 +7,8 @@ require "./save_data.php";
 error_reporting(3);
 
 // define variables and set to empty values
-$nameErr = $emailErr = $phone_typeErr = $websiteErr = $termsErr = $phoneErr = $email_typeErr =  "";
-$name = $email = $phone_type = $comment = $website = $terms = $phone = $email_type = "";
+$nameErr = $emailErr = $subjectErr = $termsErr = $messageErr =  "";
+$name = $email = $message = $subject = $terms = "";
 $boolErrors = false;
 
 // Regular Expressions https://regexr.com/
@@ -39,21 +39,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
 	
-  if (empty($_POST["website"])) {
-    $website = "";
+  if (empty($_POST["subject"])) {
+    $subject = "";
   } else {
-    $website = test_input($_POST["website"]);
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-      $websiteErr = "Invalid URL";
-	  $boolErrors = true;
-    }
+    $subject = test_input($_POST["subject"]);
   }
 
-  if (empty($_POST["comment"])) {
-    $comment = "";
+  if (empty($_POST["message"])) {
+    $message = "";
   } else {
-    $comment = test_input($_POST["comment"]);
+    $message = test_input($_POST["message"]);
   }
 
   if (empty($_POST["terms"])) {
@@ -69,18 +64,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		
 		
 		$recipient = "eschall@my.lonestar.edu";			// Who will get the form submission
-		$subject = "Visitor Feedback Form"; 				// Subject for email
+		//$subject = "Visitor Feedback Form"; 				// Subject for email
 		
 		$body = "Sent: " . date("m:d:Y h:m") . "<br>";		// Put all the form fields together in an string
 		$body .= "Name: " . $name . "<br>";
 		$body .= "E-mail: " . $email . "<br>";
-		$body .= "Website: " . $website . "<br>";
+		$body .= "Subject: " . $subject . "<br>";
+    $body .= "Message: " . $message . "<br>";
 		$body .= "Agreed To Terms: " . $terms . "<br>";
-		$body .= "Comment: " . $comment . "<br>";
+	
 		
 		send_mail($email,$recipient,$subject,$body);		// Call the send_mail() function to send the email message. file: send_mail.php
 		
-		save_data($name, $email, $terms, $body);			// Call the save_data() fundtion to save to the database. file: save_data.php
+		save_data($name, $email, $subject, $message, $terms, $body);			// Call the save_data() fundtion to save to the database. file: save_data.php
 		
     header("Location: ../../thank-you.html");
     die();

@@ -3,7 +3,7 @@
 
 // https://www.w3schools.com/php/php_functions.asp
 
-function save_data($name, $email, $terms, $form_data) {		// Create a function to save the form data. Pass the values from the form as arguments.
+function save_data($name, $email, $subject, $message, $terms, $form_data) {		// Create a function to save the form data. Pass the values from the form as arguments.
 
 
 	// https://www.w3schools.com/php/php_mysql_insert.asp  Example (MySQLi Procedural)
@@ -11,7 +11,7 @@ function save_data($name, $email, $terms, $form_data) {		// Create a function to
 	$servername = "localhost";			// Define variable for Server to connect to
 	$username = "eric";				// Define variable for MySQL user name
 	$password = "password";				// Define variable for MySQL password
-	$dbname = "test";					// Define variable for database to use (must be created prior in phpMyAdmin
+	$dbname = "contact";					// Define variable for database to use (must be created prior in phpMyAdmin
 	$tablename = "contact_form";		// Define variable for table to use (must be create with database.sql in phpMyAdmin
 
 	// Create connection
@@ -21,9 +21,11 @@ function save_data($name, $email, $terms, $form_data) {		// Create a function to
 		die("Connection failed: " . mysqli_connect_error());
 	}
 
-	$sql = "INSERT INTO " . $tablename . " (name, email, terms, form_data) VALUES (";		// Insert values that match the table we created
+	$sql = "INSERT INTO " . $tablename . " (name, email, subject, message, terms, form_data) VALUES (";		// Insert values that match the table we created
 	$sql .= "'" . $name . "', ";				// Use $name from function arguments. SQL stings in single quotes ex. 'My String'
 	$sql .= "'" . $email . "', ";				// Use $email from function arguments. SQL stings in single quotes ex. 'My String'
+	$sql .= "'" . $subject . "', ";				// Use $email from function arguments. SQL stings in single quotes ex. 'My String'	
+	$sql .= "'" . $message . "', ";				// Use $email from function arguments. SQL stings in single quotes ex. 'My String'	
 	
 	if ($terms == "agreed") {							// For checkbox we use boolean field in MySQL. 				
 		$sql .= "1, ";							// This means true or false, 1 or 0
