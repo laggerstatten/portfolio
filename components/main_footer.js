@@ -12,7 +12,7 @@ class MainFooter extends HTMLElement {
             <!-- Footer copyright START -->
             <div class="row align-items-center justify-content-md-between py-4">
               <div class="col-md-6">
-                <div class="text-center text-md-start">©2023 <a href="https://www.humboldtgeoscience.com/" target="_blank">Eric Schall</a>. All rights reserved
+                <div class="text-center text-md-start">©2024 <a href="https://www.humboldtgeoscience.com/" target="_blank">Eric Schall</a>. All rights reserved
                 </div>
               </div>
             </div>
