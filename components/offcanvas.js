@@ -37,7 +37,7 @@ class Offcanvas extends HTMLElement {
                             <!-- Nav item -->
                             <li class="nav-item d-block d-md-flex mb-2">
                                 <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="portfolio.html">Portfolio</a></h5>
-                                <p class="align-self-center mt-0 mt-md-5">— projects from the last 4 years</p>
+                                <p class="align-self-center mt-0 mt-md-5">— projects from the last 5 years</p>
                             </li>
 
                             <!-- Nav item -->
