@@ -93,21 +93,21 @@ Portfolio START -->
 
 			{% for item in site.portfolio %}
 				<!-- Card item START -->
-				<div class="{{ portfolio.class }}" data-category="all">
+				<div class="{{ item.class }}" data-category="all">
 					<div class="card">
 						<div class="position-relative">
 							<!-- Card Image -->
-							<img class="card-img-top rounded" src="{{ portfolio.thumb }}" alt="card image">
+							<img class="card-img-top rounded" src="{{ item.thumb }}" alt="card image">
 							<!-- Card Overlay -->
 							<div class="position-absolute top-50 start-50 translate-middle card-element-hover p-0">
-								<a href="{{ portfolio.link }}" class="btn btn-white btn-sm btn-line">View Project</a>
+								<a href="{{ item.link }}" class="btn btn-white btn-sm btn-line">View Project</a>
 							</div>
 						</div>
 						<!-- Card body -->
 						<div class="card-body px-0 mt-n5 position-relative zindex-9">
-							<span class="display-9 mb-0 mt-2 font-alt fw-normal bg-primary rounded text-white px-2 py-1 ms-3 mb-3 d-inline-block">{{ portfolio.focus }}</span>
-							<h5 class="card-title"><a href="{{ portfolio.url }}">{{ portfolio.name }}</a></h5>
-							<p class="small">{{ portfolio.description }}</p>
+							<span class="display-9 mb-0 mt-2 font-alt fw-normal bg-primary rounded text-white px-2 py-1 ms-3 mb-3 d-inline-block">{{ item.focus }}</span>
+							<h5 class="card-title"><a href="{{ item.link }}">{{ item.name }}</a></h5>
+							<p class="small">{{ item.description }}</p>
 						</div>
 					</div>
 				</div>
