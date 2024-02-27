@@ -1,55 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Eric Schall</title>
-	<!-- Meta Tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="Eric Schall">
-	<meta name="description" content="Portfolio">
+--- 
+layout: default
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="assets/images/favicon.ico">
-
-	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Rubik:wght@400;500;700&family=Spartan:wght@400;700;900&display=swap" rel="stylesheet">
-
-	<!-- Plugins CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/aos/aos.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
-
-	<!-- Theme CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	
-	<!-- Headers & Footers -->
-	<script src="components/main_header.js" type="text/javascript" defer></script>
-	<script src="components/offcanvas.js" type="text/javascript" defer></script>
-	<script src="components/main_footer.js" type="text/javascript" defer></script>
-</head>
-
-<body>
-
-<!-- Pre loader -->
-<div class="preloader">
-	<img class="preloader-item" src="assets/images/loader/01.gif" alt="Loading">
-</div>
-
-<!-- Offcanvas full dark START -->
-<offcanvas-component></offcanvas-component>
-<!-- Offcanvas full dark END -->
-
-<!-- =======================
-Header START -->
-<main-header-component></main-header-component>
-<!-- =======================
-Header END -->
-
-<!-- **************** MAIN CONTENT START **************** -->
-<main>
+title: Eric Schall
+--- 
 
 <!-- =======================
 Main Banner START -->
@@ -106,308 +59,39 @@ Portfolio START-->
 		<!-- Portfolio -->
 		<div class="row g-0">
 
-			<!-- Card item START -->
-			<div class="col-md-6 mt-4 mt-lg-7">
-				<div class="card border-0 rounded bg-transparent ">
-					<!-- Card Image -->
-					<div class="card-image overflow-hidden ms-5 ms-sm-8 position-relative z-index-9">
-						<div class="reveal-item rounded" data-aos="reveal-item">
-							<div class="reveal-animation reveal-end reveal-primary aos" data-aos="reveal-end"></div>
-							<img class="w-100" src="assets/images/portfolio/01.jpg" alt="Portfolio image">
+			{% for item in site.project_detail %}
+				<!-- Card item START -->
+				<div class="{{ item.cardclass }}">
+					<div class="card border-0 rounded bg-transparent ">
+						<!-- Card Image -->
+						<div class="card-image overflow-hidden ms-5 ms-sm-8 position-relative z-index-9">
+							<div class="reveal-item rounded" data-aos="reveal-item">
+								<div class="reveal-animation reveal-end reveal-primary aos" data-aos="reveal-end"></div>
+								<img class="w-100" src="{{ item.image }}" alt="Portfolio image">
+							</div>
+							<!-- Card Overlay duplicate-->
+							<div class="card-img-overlay d-flex flex-column ms-n5 ms-sm-n8">
+								<div class="card-text mt-2 mt-md-6">
+									<p class="{{ item.cardtext }}">{{ item.focus1 }}</p>
+									<h5 class="display-8 display-lg-7 text-white-stroke">{{ item.name}}</h5>
+								</div>
+							</div>
 						</div>
-						<!-- Card Overlay duplicate-->
-						<div class="card-img-overlay d-flex flex-column ms-n5 ms-sm-n8">
+						<!-- Card Overlay -->
+						<div class="card-img-overlay d-flex flex-column">
 							<div class="card-text mt-2 mt-md-6">
-								<p class="display-9 mb-0 text-body font-alt fw-normal">Travel Magazine</p>
-								<h5 class="display-8 display-lg-7 text-white-stroke">"Western Destinations"</h5>
+								<p class="display-9 mb-0 text-body font-alt fw-normal">{{ item.focus1 }}</p>
+								<h5 class="display-8 display-lg-7 text-dark-stroke">{{ item.name }}</h5>
+								<a href="{{ item.link }}" class="btn btn-primary btn-line btn-sm position-relative z-index-9 card-element-hover">View Project</a>
 							</div>
 						</div>
 					</div>
-					<!-- Card Overlay -->
-					<div class="card-img-overlay d-flex flex-column">
-						<div class="card-text mt-2 mt-md-6">
-							<p class="display-9 mb-0 text-body font-alt fw-normal">Travel Magazine</p>
-							<h5 class="display-8 display-lg-7 text-dark-stroke">"Western Destinations"</h5>
-							<a href="project_detail/Western_Destinations.html" class="btn btn-primary btn-line btn-sm position-relative z-index-9 card-element-hover">View Project</a>
-						</div>
-					</div>
 				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-md-6 mt-4 mt-lg-0">
-				<div class="card border-0 rounded bg-transparent ">
-					<!-- Card Image -->
-					<div class="card-image overflow-hidden ms-5 ms-sm-8 position-relative z-index-9">
-						<div class="reveal-item rounded" data-aos="reveal-item">
-							<div class="reveal-animation reveal-end reveal-primary aos" data-aos="reveal-end"></div>
-							<img class="w-100" src="assets/images/portfolio/02.jpg" alt="Portfolio image">
-						</div>
-						<!-- Card Overlay duplicate-->
-						<div class="card-img-overlay d-flex flex-column ms-n5 ms-sm-n8">
-							<div class="card-text mt-2 mt-md-6">
-								<p class="display-9 mb-0 text-white font-alt fw-normal">Wall Calendar</p>
-								<h5 class="display-8 display-lg-7 text-white-stroke">Rural Texas</h5>
-							</div>
-						</div>
-					</div>
-					<!-- Card Overlay -->
-					<div class="card-img-overlay d-flex flex-column">
-						<div class="card-text mt-2 mt-md-6">
-							<p class="display-9 mb-0 text-body font-alt fw-normal">Wall Calendar</p>
-							<h5 class="display-8 display-lg-7 text-dark-stroke">Rural Texas</h5>
-							<a href="project_detail/Rural_Texas.html" class="btn btn-primary btn-line btn-sm position-relative z-index-9 card-element-hover">View Project</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-md-6 mt-4 mt-lg-0">
-				<div class="card border-0 rounded bg-transparent ">
-					<!-- Card Image -->
-					<div class="card-image overflow-hidden ms-5 ms-sm-8 position-relative z-index-9">
-						<div class="reveal-item rounded" data-aos="reveal-item">
-							<div class="reveal-animation reveal-end reveal-primary aos" data-aos="reveal-end"></div>
-							<img class="w-100" src="assets/images/portfolio/03.jpg" alt="Portfolio image">
-						</div>
-						<!-- Card Overlay duplicate-->
-						<div class="card-img-overlay d-flex flex-column ms-n5 ms-sm-n8">
-							<div class="card-text mt-2 mt-md-6">
-								<p class="display-9 mb-0 text-body font-alt fw-normal">Product Packaging</p>
-								<h5 class="display-8 display-lg-7 text-white-stroke">H-E-B Vietnamese Own-Brand</h5>
-							</div>
-						</div>
-					</div>
-					<!-- Card Overlay -->
-					<div class="card-img-overlay d-flex flex-column">
-						<div class="card-text mt-2 mt-md-6">
-							<p class="display-9 mb-0 text-body font-alt fw-normal">Product Packaging</p>
-							<h5 class="display-8 display-lg-7 text-dark-stroke">H-E-B Vietnamese Own-Brand</h5>
-							<a href="project_detail/HEB_Vietnamese_OwnBrand.html" class="btn btn-primary btn-line btn-sm position-relative z-index-9 card-element-hover">View Project</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-md-6 mt-4 mt-lg-7">
-				<div class="card border-0 rounded bg-transparent ">
-					<!-- Card Image -->
-					<div class="card-image overflow-hidden ms-5 ms-sm-8 position-relative z-index-9">
-						<div class="reveal-item rounded" data-aos="reveal-item">
-							<div class="reveal-animation reveal-end reveal-primary aos" data-aos="reveal-end"></div>
-							<img class="w-100" src="assets/images/portfolio/04.jpg" alt="Portfolio image">
-						</div>
-						<!-- Card Overlay duplicate-->
-						<div class="card-img-overlay d-flex flex-column ms-n5 ms-sm-n8">
-							<div class="card-text mt-2 mt-md-6">
-								<p class="display-9 mb-0 text-body font-alt fw-normal">Book Jacket</p>
-								<h5 class="display-8 display-lg-7 text-white-stroke">"Global Conflagration"</h5>
-							</div>
-						</div>
-					</div>
-					<!-- Card Overlay -->
-					<div class="card-img-overlay d-flex flex-column">
-						<div class="card-text mt-2 mt-md-6">
-							<p class="display-9 mb-0 text-body font-alt fw-normal">Book Jacket</p>
-							<h5 class="display-8 display-lg-7 text-dark-stroke">"Global Conflagration"</h5>
-							<a href="project_detail/Global_Conflagration.html" class="btn btn-primary btn-line btn-sm position-relative z-index-9 card-element-hover">View Project</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-md-6 mt-4 mt-lg-0">
-				<div class="card border-0 rounded bg-transparent ">
-					<!-- Card Image -->
-					<div class="card-image overflow-hidden ms-5 ms-sm-8 position-relative z-index-9">
-						<div class="reveal-item rounded" data-aos="reveal-item">
-							<div class="reveal-animation reveal-end reveal-primary aos" data-aos="reveal-end"></div>
-							<img class="w-100" src="assets/images/portfolio/05.jpg" alt="Portfolio image">
-						</div>
-						<!-- Card Overlay duplicate-->
-						<div class="card-img-overlay d-flex flex-column ms-n5 ms-sm-n8">
-							<div class="card-text mt-2 mt-md-6">
-								<p class="display-9 mb-0 text-body font-alt fw-normal">Website</p>
-								<h5 class="display-8 display-lg-7 text-white-stroke">Generic Aquarium</h5>
-							</div>
-						</div>
-					</div>
-					<!-- Card Overlay -->
-					<div class="card-img-overlay d-flex flex-column">
-						<div class="card-text mt-2 mt-md-6">
-							<p class="display-9 mb-0 text-body font-alt fw-normal">Website</p>
-							<h5 class="display-8 display-lg-7 text-dark-stroke">Generic Aquarium</h5>
-							<a href="project_detail/Generic_Aquarium.html" class="btn btn-primary btn-line btn-sm position-relative z-index-9 card-element-hover">View Project</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-md-6 mt-4 mt-lg-7">
-				<div class="card border-0 rounded bg-transparent ">
-					<!-- Card Image -->
-					<div class="card-image overflow-hidden ms-5 ms-sm-8 position-relative z-index-9">
-						<div class="reveal-item rounded" data-aos="reveal-item">
-							<div class="reveal-animation reveal-end reveal-primary aos" data-aos="reveal-end"></div>
-							<img class="w-100" src="assets/images/portfolio/06.jpg" alt="Portfolio image">
-						</div>
-						<!-- Card Overlay duplicate-->
-						<div class="card-img-overlay d-flex flex-column ms-n5 ms-sm-n8">
-							<div class="card-text mt-2 mt-md-6">
-								<p class="display-9 mb-0 text-white font-alt fw-normal">Product Packaging</p>
-								<h5 class="display-8 display-lg-7 text-white-stroke">St. Dalfour Latin Market</h5>
-							</div>
-						</div>
-					</div>
-					<!-- Card Overlay -->
-					<div class="card-img-overlay d-flex flex-column">
-						<div class="card-text mt-2 mt-md-6">
-							<p class="display-9 mb-0 text-body font-alt fw-normal">Product Packaging</p>
-							<h5 class="display-8 display-lg-7 text-dark-stroke">St. Dalfour Latin Market</h5>
-							<a href="project_detail/StDalfour_Latin_Market.html" class="btn btn-primary btn-line btn-sm position-relative z-index-9 card-element-hover">View Project</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-md-6 mt-4 mt-lg-0">
-				<div class="card border-0 rounded bg-transparent ">
-					<!-- Card Image -->
-					<div class="card-image overflow-hidden ms-5 ms-sm-8 position-relative z-index-9">
-						<div class="reveal-item rounded" data-aos="reveal-item">
-							<div class="reveal-animation reveal-end reveal-primary aos" data-aos="reveal-end"></div>
-							<img class="w-100" src="assets/images/portfolio/07.jpg" alt="Portfolio image">
-						</div>
-						<!-- Card Overlay duplicate-->
-						<div class="card-img-overlay d-flex flex-column ms-n5 ms-sm-n8">
-							<div class="card-text mt-2 mt-md-6">
-								<p class="display-9 mb-0 text-white font-alt fw-normal">Interactive Media</p>
-								<h5 class="display-8 display-lg-7 text-white-stroke">We Didn't Start the Fire</h5>
-							</div>
-						</div>
-					</div>
-					<!-- Card Overlay -->
-					<div class="card-img-overlay d-flex flex-column">
-						<div class="card-text mt-2 mt-md-6">
-							<p class="display-9 mb-0 text-body font-alt fw-normal">Interactive Media</p>
-							<h5 class="display-8 display-lg-7 text-dark-stroke">We Didn't Start the Fire</h5>
-							<a href="project_detail/WeDidntStartTheFire.html" class="btn btn-primary btn-line btn-sm position-relative z-index-9 card-element-hover">View Project</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-md-6 mt-4 mt-lg-7">
-				<div class="card border-0 rounded bg-transparent ">
-					<!-- Card Image -->
-					<div class="card-image overflow-hidden ms-5 ms-sm-8 position-relative z-index-9">
-						<div class="reveal-item rounded" data-aos="reveal-item">
-							<div class="reveal-animation reveal-end reveal-primary aos" data-aos="reveal-end"></div>
-							<img class="w-100" src="assets/images/portfolio/08.jpg" alt="Portfolio image">
-						</div>
-						<!-- Card Overlay duplicate-->
-						<div class="card-img-overlay d-flex flex-column ms-n5 ms-sm-n8">
-							<div class="card-text mt-2 mt-md-6">
-								<p class="display-9 mb-0 text-white font-alt fw-normal">Currency Redesign</p>
-								<h5 class="display-8 display-lg-7 text-white-stroke">Primary Sector Currency</h5>
-							</div>
-						</div>
-					</div>
-					<!-- Card Overlay -->
-					<div class="card-img-overlay d-flex flex-column">
-						<div class="card-text mt-2 mt-md-6">
-							<p class="display-9 mb-0 text-body font-alt fw-normal">Currency Redesign</p>
-							<h5 class="display-8 display-lg-7 text-dark-stroke">Primary Sector Currency</h5>
-							<a href="project_detail/Primary_Sector_Currency.html" class="btn btn-primary btn-line btn-sm position-relative z-index-9 card-element-hover">View Project</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-
-			<!-- Card item START -->
-			<div class="col-md-6 mt-4 mt-lg-0">
-				<div class="card border-0 rounded bg-transparent ">
-					<!-- Card Image -->
-					<div class="card-image overflow-hidden ms-5 ms-sm-8 position-relative z-index-9">
-						<div class="reveal-item rounded" data-aos="reveal-item">
-							<div class="reveal-animation reveal-end reveal-primary aos" data-aos="reveal-end"></div>
-							<img class="w-100" src="assets/images/portfolio/09.jpg" alt="Portfolio image">
-						</div>
-						<!-- Card Overlay duplicate-->
-						<div class="card-img-overlay d-flex flex-column ms-n5 ms-sm-n8">
-							<div class="card-text mt-2 mt-md-6">
-								<p class="display-9 mb-0 text-white font-alt fw-normal">Interactive Storybook</p>
-								<h5 class="display-8 display-lg-7 text-white-stroke">Elephants & Mice</h5>
-							</div>
-						</div>
-					</div>
-					<!-- Card Overlay -->
-					<div class="card-img-overlay d-flex flex-column">
-						<div class="card-text mt-2 mt-md-6">
-							<p class="display-9 mb-0 text-body font-alt fw-normal">Interactive Storybook</p>
-							<h5 class="display-8 display-lg-7 text-dark-stroke">Elephants & Mice</h5>
-							<a href="project_detail/Elephants_And_Mice.html" class="btn btn-primary btn-line btn-sm position-relative z-index-9 card-element-hover">View Project</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
+				<!-- Card item END -->
+			{% endfor %}
 
 		</div><!-- row END -->
 	</div>
 </section>
 <!-- =======================
 Portfolio END -->
-
-</main>
-<!-- **************** MAIN CONTENT END **************** -->
-
-<!-- =======================
-Footer START -->
-<main-footer-component></main-footer-component>
-<!-- =======================
-Footer END -->
-
-<!-- Custom cursor -->
-<div class="cursor-dot-outline"></div>
-<div class="cursor-dot"></div>
-
-<!-- Back to top -->
-<div class="back-top">
-	<div class="scroll-line"></div>
-	<span class="scoll-text">Go Up</span>
-</div>
-
-<!-- =======================
-JS libraries, plugins and custom scripts -->
-
-<!-- Bootstrap JS -->
-<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Vendors -->
-<script src="assets/vendor/glightbox/js/glightbox.js"></script>
-<script src="assets/vendor/jarallax/jarallax.min.js"></script>
-<script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/tilt.js/dist/vanilla-tilt.min.js"></script>
-
-<!-- Template Functions -->
-<script src="assets/js/functions.js"></script>
-
-</body>
-</html>

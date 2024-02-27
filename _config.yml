@@ -1,8 +1,17 @@
 collections:
-  projects:
+  project_detail:
     output: true
+    order:
+      - Western_Destinations.md
+      - Rural_Texas.md
+      - HEB_Vietnamese_OwnBrand.md
+      - Global_Conflagration.md
+      - Generic_Aquarium.md
+      - StDalfour_Latin_Market.md
+      - WeDidntStartTheFire.md
+      - Primary_Sector_Currency.md
+      - Elephants_And_Mice.md
   portfolio:
-    output: true
     order:
       - Western_Destinations.md
       - Rural_Texas.md

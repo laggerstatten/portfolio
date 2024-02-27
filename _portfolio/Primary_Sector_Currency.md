@@ -1,6 +1,6 @@
 ---
 class: "col-sm-6 col-md-4 grid-item illustrator photoshop"
-thumb: "assets/images/portfolio/08.jpg"
+image: assets/images/portfolio/08.jpg
 link: "project_detail/Primary_Sector_Currency.html"
 focus: Currency Redesign
 name: Primary Sector Currency

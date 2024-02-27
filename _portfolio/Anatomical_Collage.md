@@ -1,6 +1,6 @@
 ---
 class: "col-sm-6 col-md-4 grid-item studio_art"
-thumb: "assets/images/portfolio/studio_art/005.jpg"
+image: assets/images/portfolio/studio_art/005.jpg
 link: "discipline/studio_art_projects.html#blackandwhite"
 focus: Drawing
 name: Anatomical Collage
