@@ -1,3 +1,26 @@
 collections:
   projects:
     output: true
+  portfolio:
+    output: true
+    order:
+      - Western_Destinations.md
+      - Rural_Texas.md
+      - HEB_Vietnamese_OwnBrand.md
+      - Global_Conflagration.md
+      - Generic_Aquarium.md
+      - StDalfour_Latin_Market.md
+      - WeDidntStartTheFire.md
+      - Primary_Sector_Currency.md
+      - Elephants_And_Mice.md
+      - After_Industry.md
+      - Anatomical_Collage.md
+      - Little_River_Canyon_in_Gauche.md
+      - Cutting_Edge_Adventures.md
+      - Iconic_Explorers.md
+      - Hot_Dog_Ideas.md
+      - Brookshire_Brothers_Easy_Eats.md
+      - Ground_Beef.md
+      - Turkey_Town.md
+      - Texas_Farm_Services_Co-op.md
+      - Navi_Steve_Buscemi.md
