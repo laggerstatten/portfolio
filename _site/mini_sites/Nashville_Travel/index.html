@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Visit Nashville</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<script>
+			// https://developers.google.com/youtube/player_parameters
+		  // Load the IFrame Player API code asynchronously.
+		  var tag = document.createElement('script');
+		  tag.src = "https://www.youtube.com/player_api";
+		  var firstScriptTag = document.getElementsByTagName('script')[0];
+		  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+		  // Replace the 'ytplayer' element with an <iframe> and
+		  // YouTube player after the API code downloads.
+		  var player;
+		  function onYouTubePlayerAPIReady() {
+		    player = new YT.Player('ytplayer', {
+		      height: '360',
+		      width: '640',
+		      //videoId: 'M7lc1UVf-VE'
+					videoId: 'Mf5cmRSvSNM'
+		    });
+		  }
+		</script>
+
+
+	</head>
+	<body>
+<div id="wrapper">
+		<header>
+			<h1>Visit Nashville</h1>
+		</header>
+<main>
+		<div class="secContainer">
+			<section>
+		<h2>Sights of Nashville</h2>
+			<!-- Insert YouTube Video code here -->
+				<div id="ytplayer"></div>
+			<!-- End of YouTube Video embedded code -->
+
+			<p>This text to be replaced - Change this lorem ipsum with a nice and long introduction of why we should visit or even move to the city that you think is the best city in the world.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cum, voluptate maiores dolores voluptates corporis possimus recusandae culpa voluptatum repellat eveniet quaerat ipsa cupiditate ad repudiandae! Iste ipsam deleniti, iure! </p>
+
+		</section>
+		<section>
+		<h2>Sounds of Nashville</h2>
+			<p>Provide a background on each of the tracks you are using, and make sure to replace this lorem ipsum with actual content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cum, voluptate maiores dolores voluptates corporis possimus recusandae culpa voluptatum repellat eveniet quaerat ipsa cupiditate ad repudiandae! Iste ipsam deleniti, iure!</p>
+			<ul>
+				<li>
+					<!-- place holder for audio 1 -->
+					<audio controls>
+						<source type="audio/mpeg" src="audio/Jason Shaw - TENNESEE HAYRIDE.mp3">
+							Your browser doesn't support HTML5 audio
+					</audio>
+					<!-- end of place holder for audio 1 -->
+				</li>
+				<li>
+					<!-- place holder for audio 2 -->
+					<audio controls>
+						<source type="audio/mpeg" src="audio/Lobo Loco - Speedy Delta (ID 917).mp3">
+							Your browser doesn't support HTML5 audio
+					</audio>
+					<!-- end of place holder for audio 2 -->
+				</li>
+				<li>
+					<!-- place holder for audio 3-->
+					<audio controls>
+						<source type="audio/mpeg" src="audio/Mid-Air Machine - Appalachian Coal Mines.mp3">
+							Your browser doesn't support HTML5 audio
+					</audio>					<!-- end of place holder for audio 3 -->
+				</li>
+			</ul>
+		</section>
+	</div>
+		<aside>
+		<!-- Twiiter feed place holder -->
+		<a class="twitter-timeline"
+		data-link-color="#19CF86"
+		data-chrome="noheader, nofooter, noborders"
+		data-tweet-limit="3"
+		 href="https://twitter.com/visitmusiccity?ref_src=twsrc%5Etfw">Tweets by visitmusiccity</a>
+		 <script async src="https://platform.twitter.com/widgets.js"
+		 charset="utf-8"></script>
+
+
+		<!-- End of twitter feed place holder  -->
+	</aside>
+
+		</main>
+		<footer>
+			<p>Eric Schall | IMED: 2345 | LSC-North Harris</p>
+		</footer>
+		</div>
+	</body>
+</html>

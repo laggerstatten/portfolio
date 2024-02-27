@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Portfolio</title>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Eric Schall">
+	<meta name="description" content="Portfolio">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Rubik:wght@400;500;700&family=Spartan:wght@400;700;900&display=swap" rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.min.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<!-- Headers & Footers -->
+	<script src="components/main_header.js" type="text/javascript" defer></script>
+	<script src="components/offcanvas.js" type="text/javascript" defer></script>
+	<script src="components/main_footer.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+	
+<!-- Pre loader -->
+<div class="preloader">
+	<img class="preloader-item" src="assets/images/loader/01.gif" alt="Loading">
+</div>
+
+<!-- Offcanvas full dark START -->
+<offcanvas-component></offcanvas-component>
+<!-- Offcanvas full dark END -->
+
+<!-- =======================
+Header START -->
+<main-header-component></main-header-component>
+<!-- =======================
+Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+
+<!-- =======================
+Inner intro START -->
+<section>
+	<div class="container">
+		<div class="row d-flex justify-content-lg-between">
+			<div class="col-lg-7">
+				<div class="display-4 font-heading fw-bold caret-primary text-dark-stroke text-primary-shadow">
+				  <span class="text-dark-stroke text-light-shadow d-block d-sm-inline-block">My</span>
+				  <span class="typed text-end" data-type-text="Projects&&Experience&&Talent"></span>
+				</div>
+				<p class="lead">A collection of my works since 2018.</p>
+				<!-- <a href="#" class="btn btn-dark btn-sm btn-line">Get a quote</a> -->
+			</div>
+		</div> <!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+Inner intro END -->
+
+<!-- =======================
+Portfolio START -->
+<section class="pt-0">
+	<div class="container">
+		<!-- Nav Filters -->
+		<div class="row">
+			<div class="col-12">
+				<div class="grid-menu" data-target=".filter-container">
+					<ul class="nav nav-pills justify-content-start mb-5">
+						<li class="nav-item"> <span class="nav-link disabled ps-0">Show me:</span> </li>
+						<li class="nav-item"> <a data-filter="*" class="nav-link active">All</a> </li>
+						<li class="nav-item"> <a data-filter=".illustrator" class="nav-link">Illustrator</a> </li>
+						<li class="nav-item"> <a data-filter=".photoshop" class="nav-link">Photoshop</a> </li>
+						<li class="nav-item"> <a data-filter=".indesign" class="nav-link">InDesign</a> </li>
+						<li class="nav-item"> <a data-filter=".web" class="nav-link">Web</a> </li>
+						<li class="nav-item"> <a data-filter=".studio_art" class="nav-link">Studio Art</a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Portfolio Items START -->
+		<div class="row filter-container overflow-hidden" data-isotope='{"layoutMode": "masonry"}'>
+
+			{% for item in site.portfolio %}
+				<!-- Card item START -->
+				<div class="{{ portfolio.class }}" data-category="all">
+					<div class="card">
+						<div class="position-relative">
+							<!-- Card Image -->
+							<img class="card-img-top rounded" src="assets/images/portfolio/01.jpg" alt="card image">
+							<!-- Card Overlay -->
+							<div class="position-absolute top-50 start-50 translate-middle card-element-hover p-0">
+								<a href="{{ portfolio.url }}" class="btn btn-white btn-sm btn-line">View Project</a>
+							</div>
+						</div>
+						<!-- Card body -->
+						<div class="card-body px-0 mt-n5 position-relative zindex-9">
+							<span class="display-9 mb-0 mt-2 font-alt fw-normal bg-primary rounded text-white px-2 py-1 ms-3 mb-3 d-inline-block">{{ portfolio.focus }}</span>
+							<h5 class="card-title"><a href="{{ portfolio.url }}">{{ portfolio.name }}</a></h5>
+							<p class="small">{{ portfolio.description }}</p>
+						</div>
+					</div>
+				</div>
+				<!-- Card item END -->
+			{% endfor %}
+
+		</div>
+		<!-- Portfolio Items END -->
+	</div><!-- row END -->
+</section>
+<!-- =======================
+Portfolio END -->
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+<main-footer-component></main-footer-component>
+<!-- =======================
+Footer END -->
+
+<!-- Custom cursor -->
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+
+<!-- Back to top -->
+<div class="back-top">
+	<div class="scroll-line"></div>
+	<span class="scoll-text">Go Up</span>
+</div>
+
+<!-- =======================
+JS libraries, plugins and custom scripts -->
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Vendors -->
+<script src="assets/vendor/ityped/index.js"></script>
+<script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/imagesLoaded/imagesloaded.js"></script>
+
+<!-- Template Functions -->
+<script src="assets/js/functions.js"></script>
+
+</body>
+</html>
