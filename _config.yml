@@ -34,3 +34,39 @@ collections:
       - Turkey_Town.md
       - Texas_Farm_Services_Co-op.md
       - Navi_Steve_Buscemi.md
+  portfolio_illustrator:
+    order:
+      - Cutting_Edge_Adventures.md
+      - Hot_Dog_Ideas.md
+      - Iconic_Explorers.md
+      - Texas_Farm_Services_Co-op.md  
+  portfolio_indesign:
+    order:
+      - Brookshire_Brothers_Easy_Eats.md
+      - Turkey_Town.md
+  portfolio_photoshop:
+    order:
+      - After_Industry.md
+      - Ground_Beef.md
+      - Navi_Steve_Buscemi.md
+  portfolio_minor:
+    order:
+      - Brookshire_Brothers_Easy_Eats.md
+      - Turkey_Town.md
+      - Little_River_Canyon_in_Gauche.md
+      - Hot_Dog_Ideas.md
+      - Iconic_Explorers.md
+  portfolio_studioart:
+    order:
+      - Anatomical_Collage.md
+      - Little_River_Canyon_in_Gauche.md
+
+
+
+
+
+
+
+
+
+

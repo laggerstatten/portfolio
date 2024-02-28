@@ -6,15 +6,15 @@ focus: Book Cover
 name: Turkey Town
 description: An exercise in integrating Illustrator and InDesign.
 
-id: "turkey_town"
+divid: "turkey_town"
 title: <h3>Turkey Town</h3>
 description_long: <p>This project was produced for the my Computer Illustration class as an exercise in integrating Illustrator and InDesign.</p>
 imagelinks: 
-    /assets/images/portfolio/indesign/004.jpg
+  - /assets/images/portfolio/indesign/004.jpg
 images: 
-    /assets/images/portfolio/indesign/004sm.jpg
+  - /assets/images/portfolio/indesign/004sm.jpg
 foci: 
-    Value tracing
-    Layout
-    Textures and Vector images
+  - Value tracing
+  - Layout
+  - Textures and Vector images
 ---

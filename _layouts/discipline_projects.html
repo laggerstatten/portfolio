@@ -1,4 +1,5 @@
 ---
+layout: default
 ---
 <!-- =======================
 Inner intro START -->
@@ -26,9 +27,9 @@ Portfolio START -->
 		  <div class="row mb-4" data-sticky-container id="{{ item.id }}">
 			<div class="col-md-6">
 			  {% for i in (0..4) %}
-				{% if item["imagelink#{i+1}"] %}
-				  <a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ item["imagelink#{i+1}"] }}">
-					<img class="rounded" src="{{ item["image#{i+1}"] }}" alt="">
+				{% if item["imagelinks#{i+1}"] %}
+				  <a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ item["imagelinks#{i+1}"] }}">
+					<img class="rounded" src="{{ item["images#{i+1}"] }}" alt="">
 				  </a>
 				{% endif %}
 			  {% endfor %}
@@ -36,11 +37,11 @@ Portfolio START -->
 			<div class="col-md-6">
 			  <div data-sticky data-margin-top="100" data-margin-bottom="100" data-sticky-for="767">
 				<h3>{{ item.name }}</h3>
-				{{ item.description }}
+				{{ item.description_long }}
 				<ul class="list-group list-group-borderless list-group-icon-primary-bg mb-5">
 				  {% for i in (0..4) %}
-					{% if item["focus#{i+1}"] %}
-					  <li class="list-group-item"><i class="fas fa-check"></i>{{ item["focus#{i+1}"] }}</li>
+					{% if item["foci#{i+1}"] %}
+					  <li class="list-group-item"><i class="fas fa-check"></i>{{ item["foci#{i+1}"] }}</li>
 					{% endif %}
 				  {% endfor %}
 				</ul>
@@ -52,11 +53,11 @@ Portfolio START -->
 			<div class="col-md-6 order-last order-md-1">
 			  <div data-sticky data-margin-top="100" data-margin-bottom="100" data-sticky-for="767">
 				<h3>{{ item.name }}</h3>
-				{{ item.description }}
+				{{ item.description_long }}
 				<ul class="list-group list-group-borderless list-group-icon-primary-bg">
 				  {% for i in (0..4) %}
-					{% if item["focus#{i+1}"] %}
-					  <li class="list-group-item"><i class="fas fa-check"></i>{{ item["focus#{i+1}"] }}</li>
+					{% if item["foci#{i+1}"] %}
+					  <li class="list-group-item"><i class="fas fa-check"></i>{{ item["foci#{i+1}"] }}</li>
 					{% endif %}
 				  {% endfor %}
 				</ul>
@@ -64,9 +65,9 @@ Portfolio START -->
 			</div>
 			<div class="col-md-6 order-1 order-md-last">
 			  {% for i in (0..4) %}
-				{% if item["imagelink#{i+1}"] %}
-				  <a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ item["imagelink#{i+1}"] }}">
-					<img class="rounded" src="{{ item["image#{i+1}"] }}" alt="">
+				{% if item["imagelinks#{i+1}"] %}
+				  <a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ item["imagelinks#{i+1}"] }}">
+					<img class="rounded" src="{{ item["images#{i+1}"] }}" alt="">
 				  </a>
 				{% endif %}
 			  {% endfor %}

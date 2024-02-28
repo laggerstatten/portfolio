@@ -1,8 +1,8 @@
---- 
+---
 layout: default
 
 title: Photoshop Projects
---- 
+---
 <!-- =======================
 Inner intro START -->
 <section class=" text-center">
@@ -11,8 +11,8 @@ Inner intro START -->
 			<div class="col-md-12 col-lg-8 mx-auto">
 				<!-- Title -->
 				<h1 class="display-5 text-primary">Adobe Photoshop Projects</h1>
-			  <p>These are minor and/or early projects produced primarily in Adobe Photoshop during my time at LSC from 2018 to the present.</p>
-			  <!--<a class="btn btn-dark" data-glightbox data-gallery="video" href="https://youtu.be/4iA0srfIru0">Play video <i class="fas fa-play ms-2"></i></a>-->
+				<p>These are minor and/or early projects produced primarily in Adobe Photoshop during my time at LSC from 2018 to the present.</p>
+				<!--<a class="btn btn-dark" data-glightbox data-gallery="video" href="https://youtu.be/4iA0srfIru0">Play video <i class="fas fa-play ms-2"></i></a>-->
 			</div>
 		</div> <!-- Row END -->
 	</div>
@@ -24,72 +24,54 @@ Inner intro END -->
 Portfolio START -->
 <section class="pt-5 pb-0">
 	<div class="container">
-		<!-- Compositing -->
-		<div class="row mb-4" data-sticky-container id="compositing">
+
+		{% for item in site.portfolio_photoshop %}
+		{% assign tmp = forloop.index | modulo: 2 %}
+		{% if tmp == 1 %}
+		<div class="row mb-4" data-sticky-container id="{{ item.divid }}">
 			<div class="col-md-6">
-				<a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="../assets\images\portfolio\photoshop\001.jpg" >
-					<img class="rounded" src="../assets\images\portfolio\photoshop\001sm.jpg" alt="">
+				{% for image_index in (0..item.images.size) %}
+				<a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ item.imagelinks[image_index] }}">
+					<img class="rounded" src="{{ item.images[image_index] }}" alt="">
 				</a>
-				<a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="../assets\images\portfolio\photoshop\002.jpg">
-					<img class="rounded" src="../assets\images\portfolio\photoshop\002.jpg" alt="">
-				</a>
+				{% endfor %}
 			</div>
 			<div class="col-md-6">
 				<div data-sticky data-margin-top="100" data-margin-bottom="100" data-sticky-for="767">
-					<h3>Compositing</h3>
-					<p>These composites were produced for a Digital Imaging II course in Fall 2022. The first composite depicts a post-disaster landscape in greyscale with hope for the future. 
-                        The second composite is an interpretation of Poe's "The Raven".</p>
+					<h3>{{ item.name }}</h3>
+					{{ item.description_long }}
 					<ul class="list-group list-group-borderless list-group-icon-primary-bg mb-5">
-						<li class="list-group-item"><i class="fas fa-check"></i>Photo selection</li>
-						<li class="list-group-item"><i class="fas fa-check"></i>Selector tools</li>
-						<li class="list-group-item"><i class="fas fa-check"></i>Image composition for story-telling</li>
-						<li class="list-group-item"><i class="fas fa-check"></i>Blurs & Adjustments to create depth</li>
+						{% for focus in item.foci %}
+						<li class="list-group-item"><i class="fas fa-check"></i>{{ focus }}</li>
+						{% endfor %}
 					</ul>
 				</div>
 			</div>
 		</div>
-
-		<!-- Movie Posters -->
-		<div class="row mt-6 mb-4" data-sticky-container id="movie_posters">
+		{% else %}
+		<div class="row mt-6 mb-4" data-sticky-container id="{{ item.divid }}">
 			<div class="col-md-6 order-last order-md-1">
 				<div data-sticky data-margin-top="100" data-margin-bottom="100" data-sticky-for="767">
-					<h3>Movie Posters</h3>
-					<p>These movie posters were produced in Photoshop courses, for building skill in image selection.</p>
+					<h3>{{ item.name }}</h3>
+					{{ item.description_long }}
 					<ul class="list-group list-group-borderless list-group-icon-primary-bg">
-						<li class="list-group-item"><i class="fas fa-check"></i>Choice of fonts</li>
-						<li class="list-group-item"><i class="fas fa-check"></i>Selector tools</li>
+						{% for focus in item.foci %}
+						<li class="list-group-item"><i class="fas fa-check"></i>{{ focus }}</li>
+						{% endfor %}
 					</ul>
 				</div>
 			</div>
 			<div class="col-md-6 order-1 order-md-last">
-                <a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="../assets\images\portfolio\photoshop\003.jpg">
-					<img class="rounded" src="../assets\images\portfolio\photoshop\003.jpg" alt="">
+				{% for image_index in (0..item.images.size) %}
+				<a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ item.imagelinks[image_index] }}">
+					<img class="rounded" src="{{ item.images[image_index] }}" alt="">
 				</a>
-				<a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="../assets\images\portfolio\photoshop\004.jpg">
-					<img class="rounded" src="../assets\images\portfolio\photoshop\004sm.jpg" alt="">
-				</a>
+				{% endfor %}
 			</div>
 		</div>
+		{% endif %}
+		{% endfor %}
 
-		<!-- Avatar Transformation -->
-		<div class="row mb-4" data-sticky-container id="avatar">
-			<div class="col-md-6">
-                <a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="../assets\images\portfolio\photoshop\005.jpg" >
-					<img class="rounded" src="../assets\images\portfolio\photoshop\005.jpg" alt="">
-				</a>
-			</div>
-			<div class="col-md-6">
-				<div data-sticky data-margin-top="100" data-margin-bottom="100" data-sticky-for="767">
-					<h3>Avatar Transformation</h3>
-					<p>This image was produced for a Photoshop course in Fall 2020. The premise is to take a photograph of a person and transform it into a Na'vi.</p>
-					<ul class="list-group list-group-borderless list-group-icon-primary-bg mb-5">
-						<li class="list-group-item"><i class="fas fa-check"></i>Color adjustments</li>
-						<li class="list-group-item"><i class="fas fa-check"></i>Warps & Transforms</li>
-						<li class="list-group-item"><i class="fas fa-check"></i>Adjustment Layers</li>
-					</ul>
-				</div>
-			</div>
-		</div>
 	</div>
 	<!-- Portfolio END -->
 </section>

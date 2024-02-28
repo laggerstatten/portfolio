@@ -6,17 +6,17 @@ focus: Magazine Ads
 name: Texas Farm Services Co-op
 description: An early ad series.
 
-id: "tfsc"
+divid: "tfsc"
 title: <h3>Texas Farm Services Co-op</h3>
 description_long: <p>These ads were very early works for a Design Communications course in Fall 2018.</p>
 imagelinks: 
-    /assets/images/portfolio/illustrator/008.png
-    /assets/images/portfolio/illustrator/009.png
-    /assets/images/portfolio/illustrator/010.png
+  - /assets/images/portfolio/illustrator/008.png
+  - /assets/images/portfolio/illustrator/009.png
+  - /assets/images/portfolio/illustrator/010.png
 images: 
-    /assets/images/portfolio/illustrator/008.png
-    /assets/images/portfolio/illustrator/009.png
-    /assets/images/portfolio/illustrator/010.png
+  - /assets/images/portfolio/illustrator/008.png
+  - /assets/images/portfolio/illustrator/009.png
+  - /assets/images/portfolio/illustrator/010.png
 foci: 
-    Advertising
+  - Advertising
 ---
