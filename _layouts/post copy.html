@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<!-- =======================
+Inner intro START -->
+<section>
+	<div class="container">
+		<div class="row d-flex justify-content-lg-between">
+			<!-- Inner intro title -->
+			<div class="col-md-8 mx-auto">
+				<!-- Title -->
+				<h1 class="display-6">{{ page.title }}</h1>
+				<!-- Post meta -->
+				<ul class="list-unstyled list-inline">
+					<li class="list-inline-item">by Eric Schall</li>
+					<li class="list-inline-item"><i class="fas fa-circle smaller mx-1 fw-bold"></i></li>
+					<li class="list-inline-item">{{ page.date | date_to_string }}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Inner intro END -->
+
+<!-- =======================
+Blog START -->
+<section class="pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 mx-auto">
+				{{ content }}
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Blog END -->

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Blog</title>
+	<title>Design Gig Work</title>
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,9 +20,17 @@
 	<link rel="stylesheet" type="text/css" href="/assets/vendor/bootstrap-icons/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="/assets/vendor/animate/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="/assets/vendor/tiny-slider/tiny-slider.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/aos/aos.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/glightbox/css/glightbox.css">
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+	<style>
+		.error {
+			color: #FF0000;
+		}
+	</style>
 
 	<!-- Headers & Footers -->
 	<script src="/components/main_header.js" type="text/javascript" defer></script>
@@ -49,18 +57,23 @@ Header END -->
 
 	<!-- **************** MAIN CONTENT START **************** -->
 	<main>
-
 		<!-- =======================
 Inner intro START -->
 		<section>
 			<div class="container">
 				<div class="row d-flex justify-content-lg-between">
 					<!-- Inner intro title -->
-					<div class="col-md-8 mx-auto text-center">
-						<h1 class="display-6">Design Blog</h1>
-						<p class="lead">Blog entries for ARTC 2313.</p>
+					<div class="col-md-8 mx-auto">
+						<!-- Title -->
+						<h1 class="display-6">Design Gig Work</h1>
+						<!-- Post meta -->
+						<ul class="list-unstyled list-inline">
+							<li class="list-inline-item">by Eric Schall</li>
+							<li class="list-inline-item"><i class="fas fa-circle smaller mx-1 fw-bold"></i></li>
+							<li class="list-inline-item">18 Feb 2024</li>
+						</ul>
 					</div>
-				</div> <!-- Row END -->
+				</div>
 			</div>
 		</section>
 		<!-- =======================
@@ -68,43 +81,27 @@ Inner intro END -->
 
 		<!-- =======================
 Blog START -->
-		<section class="position-relative z-index-9 pt-0">
+		<section class="pt-0">
 			<div class="container">
 				<div class="row">
+					<div class="col-md-8 mx-auto">
+						<p>I still don't have Front Matter set up for editing the blog posts. I spent some more time looking at it, and realized that I still need a static-site generator in my stack for blogging. I don't really understand what that is, so that will be on my reading list for this week.</p>
 
-					<!-- Card item image START -->
-					<div class="col-md-10 col-lg-7 mx-auto mb-4">
-						<div class="card h-100 overflow-hidden">
-							<!-- Card image -->
-							<div class="card-img-top rounded overflow-hidden position-relative">
-								<img src={{ blog.image }} alt="blog image">
-							</div>
-							<!-- Card Body -->
-							<div class="card-body py-4 px-0 d-flex align-items-start flex-column">
-								<div class="mb-auto">
-									<div class="card-meta mb-3 d-flex align-items-center flex-row">
-										<!-- Card Categories -->
-										<div class="text-primary-hover">
-											<a href={{ blog.url }} class="me-2">{{ blog.week }}</a>
-										</div>
-									</div>
-									<h4><a href={{ blog.url }}>{{ blog.title }}</a></h4>
-									<p>{{ blog.description }}</p>
-								</div>
-								<div class="mt-auto">
-									<a href={{ blog.url }} class="btn text-dark btn-sm btn-line">Continue Reading</a>
-								</div>
-							</div>
-						</div>
+<p>My Digital Publishing work starting this week is to create a poster for an upcoming event. This is outside my typical workflow, as I am not primarily a designer and do not seek work outside of my normal in-house work. I consider myself more of an analyst/developer who incorporates design work into my craft.</p>
+
+<p>The last time I did any pure design work (outside of class) was laying out a picture book for my friend who is an author/illustrator. While switching publishers for a second edition, she used Fiverr to have someone re-master the book. I don't think the original master images were provided to the Fiverr contractor, but regardless, the Fiverr contractor did a pretty terrible job. They just dragged the images into InDesign without regard for how page counts would work, where margins were, or how facing pages would interact. </p>
+
+<p><img class="rounded my-4" src="/assets/images/blog/indesign_book.jpg" alt="" /></p>
+
+<p>I need to get onto one of the platforms and find a potential client. </p>
+
 					</div>
-					<!-- Card item image END -->
-
-				</div> <!-- Row END -->
-
+				</div>
 			</div>
 		</section>
 		<!-- =======================
 Blog END -->
+
 
 	</main>
 	<!-- **************** MAIN CONTENT END **************** -->
@@ -132,7 +129,16 @@ JS libraries, plugins and custom scripts -->
 	<script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 	<!-- Vendors -->
+	<script src="/assets/vendor/glightbox/js/glightbox.js"></script>
+	<script src="/assets/vendor/jarallax/jarallax.min.js"></script>
 	<script src="/assets/vendor/tiny-slider/tiny-slider.js"></script>
+	<script src="/assets/vendor/aos/aos.js"></script>
+	<script src="/assets/vendor/tilt.js/dist/vanilla-tilt.min.js"></script>
+	<script src="/assets/vendor/ityped/index.js"></script>
+	<script src="/assets/vendor/isotope/isotope.pkgd.min.js"></script>
+	<script src="/assets/vendor/imagesLoaded/imagesloaded.js"></script>
+	<script src="/assets/vendor/sticky-js/sticky.min.js"></script>
+
 
 	<!-- Template Functions -->
 	<script src="/assets/js/functions.js"></script>

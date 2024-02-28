@@ -1,3 +1,4 @@
+baseurl: ""
 collections:
   project_detail:
     output: true

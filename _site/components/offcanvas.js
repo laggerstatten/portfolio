@@ -29,38 +29,38 @@ class Offcanvas extends HTMLElement {
                             <!-- Home menu Dropdown START -->
                             <li class="collapse" id="home-dropdown-collapse">
                                 <ul class="nav flex-column w-100 pb-4 pe-0 pe-lg-5">
-                                    <li class="nav-item"> <a class="nav-link px-0 text-body" href="index.html#featuredProjects">Featured Projects</a> </li>
+                                    <li class="nav-item"> <a class="nav-link px-0 text-body" href="/index.html#featuredProjects">Featured Projects</a> </li>
                                 </ul>
                             </li>
                             <!-- Home menu Dropdown END -->
 
                             <!-- Nav item -->
                             <li class="nav-item d-block d-md-flex mb-2">
-                                <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="portfolio.html">Portfolio</a></h5>
+                                <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="/portfolio.html">Portfolio</a></h5>
                                 <p class="align-self-center mt-0 mt-md-5">— projects from the last 5 years</p>
                             </li>
 
                             <!-- Nav item -->
                             <li class="nav-item d-block d-md-flex mb-2">
-                                <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="blog-minimal.html">Blog</a></h5>
+                                <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="/blog-minimal.html">Blog</a></h5>
                                 <p class="align-self-center mt-0 mt-md-5">— thoughts on design</p>
                             </li>
 
                             <!-- Nav item -->
                             <li class="nav-item d-block d-md-flex mb-2">
-                                <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="design_timeline.html">Design Timeline</a></h5>
+                                <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="/design_timeline.html">Design Timeline</a></h5>
                                 <p class="align-self-center mt-0 mt-md-5">— my time at LSC</p>
                             </li>
 
                             <!-- Nav item -->
                             <li class="nav-item d-block d-md-flex mb-2">
-                                <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="aboutme.html">About Me</a></h5>
+                                <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="/aboutme.html">About Me</a></h5>
                                 <p class="align-self-center mt-0 mt-md-5">— who am I?</p>
                             </li>
 
                             <!-- Nav item -->
                             <li class="nav-item d-block d-md-flex mb-2">
-                                <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="contact.html">Contact Me</a></h5>
+                                <h5 class="display-5 mb-0"><a class="nav-link text-light-stroke" href="/contact.html">Contact Me</a></h5>
                                 <p class="align-self-center mt-0 mt-md-5">— talk to me</p>
                             </li>
 
