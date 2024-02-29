@@ -7,6 +7,8 @@ collections:
       - Rural_Texas.md
       - HEB_Vietnamese_OwnBrand.md
       - Global_Conflagration.md
+      - French_Republican_Calendar.md
+      - Cyclical_Anger_Transference.md
       - Generic_Aquarium.md
       - StDalfour_Latin_Market.md
       - WeDidntStartTheFire.md
@@ -15,25 +17,33 @@ collections:
   portfolio:
     order:
       - Western_Destinations.md
+      - French_Republican_Calendar.md
       - Rural_Texas.md
       - HEB_Vietnamese_OwnBrand.md
       - Global_Conflagration.md
       - Generic_Aquarium.md
+      - Cyclical_Anger_Transference.md
       - StDalfour_Latin_Market.md
       - WeDidntStartTheFire.md
       - Primary_Sector_Currency.md
       - Elephants_And_Mice.md
+      - How_To_Get_Over_There.md
       - After_Industry.md
       - Anatomical_Collage.md
       - Little_River_Canyon_in_Gauche.md
+      - Cryptic_Labyrinth.md
+      - Phytoplankton_Botanicals.md
       - Cutting_Edge_Adventures.md
       - Iconic_Explorers.md
+      - Collages.md
+      - Lancaster.md
       - Hot_Dog_Ideas.md
       - Brookshire_Brothers_Easy_Eats.md
       - Ground_Beef.md
       - Turkey_Town.md
       - Texas_Farm_Services_Co-op.md
       - Navi_Steve_Buscemi.md
+      - When_A_Great_Tree_Falls.md
   portfolio_illustrator:
     order:
       - Cutting_Edge_Adventures.md
@@ -49,6 +59,7 @@ collections:
       - After_Industry.md
       - Ground_Beef.md
       - Navi_Steve_Buscemi.md
+      - When_A_Great_Tree_Falls.md
   portfolio_minor:
     order:
       - Brookshire_Brothers_Easy_Eats.md
@@ -58,15 +69,12 @@ collections:
       - Iconic_Explorers.md
   portfolio_studioart:
     order:
+      - How_To_Get_Over_There.md
       - Anatomical_Collage.md
       - Little_River_Canyon_in_Gauche.md
-
-
-
-
-
-
-
-
-
-
+      - Phytoplankton_Botanicals.md
+      - Collages.md
+  portfolio_interactive:
+    order:
+      - Cryptic_Labyrinth.md
+      - Lancaster.md

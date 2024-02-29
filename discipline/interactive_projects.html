@@ -1,0 +1,79 @@
+---
+layout: default_lvl1
+
+title: Interactive Projects
+---
+<!-- =======================
+Inner intro START -->
+<section class=" text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-lg-8 mx-auto">
+				<!-- Title -->
+				<h1 class="display-5 text-primary">Interactive Projects</h1>
+				<p></p>
+				<!--<a class="btn btn-dark" data-glightbox data-gallery="video" href="https://youtu.be/4iA0srfIru0">Play video <i class="fas fa-play ms-2"></i></a>-->
+			</div>
+		</div> <!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+Inner intro END -->
+
+<!-- =======================
+Portfolio START -->
+<section class="pt-5 pb-0">
+	<div class="container">
+
+		{% for item in site.portfolio_interactive %}
+		{% assign tmp = forloop.index | modulo: 2 %}
+		{% if tmp == 1 %}
+		<div class="row mb-4" data-sticky-container id="{{ item.divid }}">
+			<div class="col-md-6">
+				{% for image_index in (0..item.images.size) %}
+				<a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ item.imagelinks[image_index] }}">
+					<img class="rounded" src="{{ item.images[image_index] }}" alt="">
+				</a>
+				{% endfor %}
+			</div>
+			<div class="col-md-6">
+				<div data-sticky data-margin-top="100" data-margin-bottom="100" data-sticky-for="767">
+					<h3>{{ item.name }}</h3>
+					{{ item.description_long }}
+					<ul class="list-group list-group-borderless list-group-icon-primary-bg mb-5">
+						{% for focus in item.foci %}
+						<li class="list-group-item"><i class="fas fa-check"></i>{{ focus }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+		{% else %}
+		<div class="row mt-6 mb-4" data-sticky-container id="{{ item.divid }}">
+			<div class="col-md-6 order-last order-md-1">
+				<div data-sticky data-margin-top="100" data-margin-bottom="100" data-sticky-for="767">
+					<h3>{{ item.name }}</h3>
+					{{ item.description_long }}
+					<ul class="list-group list-group-borderless list-group-icon-primary-bg">
+						{% for focus in item.foci %}
+						<li class="list-group-item"><i class="fas fa-check"></i>{{ focus }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6 order-1 order-md-last">
+				{% for image_index in (0..item.images.size) %}
+				<a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ item.imagelinks[image_index] }}">
+					<img class="rounded" src="{{ item.images[image_index] }}" alt="">
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+		{% endif %}
+		{% endfor %}
+
+	</div>
+	<!-- Portfolio END -->
+</section>
+<!-- =======================
+Portfolio END -->

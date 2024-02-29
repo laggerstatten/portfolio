@@ -1,0 +1,60 @@
+<style>
+	.text-gray-stroke-card {
+		/*color: transparent !important;*/
+		/*color: rbga(127, 127, 127, 0.8) !important;*/
+		color: var(--bs-gray-700);
+		opacity: 0.7 !important;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: var(--bs-gray-900);
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.text-white-stroke-card {
+		color: var(--bs-gray-200);
+		opacity: 0.7 !important;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: var(--bs-white);
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+</style>
+
+
+
+
+
+<!-- Card item START -->
+text-body: Travel Magazine
+text-gray-stroke-card: "Western Destinations"
+
+text-body: Product Packaging
+text-gray-stroke-card: H-E-B Vietnamese Own-Brand
+
+
+<!-- Card item START -->
+text-white: Wall Calendar
+text-white-stroke-card: Rural Texas
+
+text-white: Interactive Media
+text-white-stroke-card: We Didn't Start the Fire
+
+text-white: Currency Redesign
+text-white-stroke-card: Primary Sector Currency
+
+text-white: Interactive Storybook
+text-white-stroke-card: Elephants & Mice
+
+
+<!-- Card item START -->
+text-white: Product Packaging
+text-gray-stroke-card: St. Dalfour Latin Market
+
+
+<!-- Card item START -->
+text-body: Book Jacket
+text-white-stroke-card: "Global Conflagration"
+
+text-body: Website
+text-white-stroke-card: Generic Aquarium
+
