@@ -11,8 +11,8 @@ class Header extends HTMLElement {
             <div class="container">
 
                 <!-- Logo START -->
-                <a class="navbar-brand" href="/index.html">
-                    <img class="navbar-brand-item" src="/assets/images/logo.png" alt="Logo">
+                <a class="navbar-brand" href="/portfolio/index.html">
+                    <img class="navbar-brand-item" src="/portfolio/assets/images/logo.png" alt="Logo">
                 </a>
                 <!-- Logo END -->
     
@@ -33,12 +33,12 @@ class Header extends HTMLElement {
                                         <div class="col-sm-6 col-lg-3">
                                             <ul class="list-unstyled mb-4 mb-lg-0">
                                                 <li class="dropdown-header">Main</li>
-                                                <li> <a class="dropdown-item" href="/index.html">Home</a> </li>
-                                                <li> <a class="dropdown-item" href="/portfolio.html">Portfolio</a> </li>
-                                                <li> <a class="dropdown-item" href="/blog-minimal.html">Blog</a> </li>
-                                                <li> <a class="dropdown-item" href="/design_timeline.html">Design Timeline</a> </li>
-                                                <li> <a class="dropdown-item" href="/aboutme.html">About Me</a> </li>
-                                                <li> <a class="dropdown-item" href="/contact.html">Contact Me</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/index.html">Home</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/portfolio.html">Portfolio</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/blog-minimal.html">Blog</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/design_timeline.html">Design Timeline</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/aboutme.html">About Me</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/contact.html">Contact Me</a> </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -54,15 +54,15 @@ class Header extends HTMLElement {
                                         <div class="col-sm-6 col-lg-3">
                                             <ul class="list-unstyled mb-4 mb-lg-0">
                                                 <li class="dropdown-header">Featured Projects</li>
-                                                <li> <a class="dropdown-item" href="/project_detail/Western_Destinations.html">Western Destinations</a> </li>
-                                                <li> <a class="dropdown-item" href="/project_detail/Rural_Texas.html">Rural Texas</a> </li>
-                                                <li> <a class="dropdown-item" href="/project_detail/HEB_Vietnamese_OwnBrand.html">H-E-B Vietnamese Own-Brand</a> </li>
-                                                <li> <a class="dropdown-item" href="/project_detail/Global_Conflagration.html">"Global Conflagration"</a> </li>
-                                                <li> <a class="dropdown-item" href="/project_detail/Generic_Aquarium.html">Generic Aquarium</a> </li>
-                                                <li> <a class="dropdown-item" href="/project_detail/StDalfour_Latin_Market.html">St. Dalfour Latin Market</a> </li>
-                                                <li> <a class="dropdown-item" href="/project_detail/WeDidntStartTheFire.html">We Didn't Start the Fire</a> </li>
-                                                <li> <a class="dropdown-item" href="/project_detail/Primary_Sector_Currency.html">Primary Sector Currency</a> </li>
-                                                <li> <a class="dropdown-item" href="/project_detail/Elephants_And_Mice.html">Elephants & Mice</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/project_detail/Western_Destinations.html">Western Destinations</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/project_detail/Rural_Texas.html">Rural Texas</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/project_detail/HEB_Vietnamese_OwnBrand.html">H-E-B Vietnamese Own-Brand</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/project_detail/Global_Conflagration.html">"Global Conflagration"</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/project_detail/Generic_Aquarium.html">Generic Aquarium</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/project_detail/StDalfour_Latin_Market.html">St. Dalfour Latin Market</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/project_detail/WeDidntStartTheFire.html">We Didn't Start the Fire</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/project_detail/Primary_Sector_Currency.html">Primary Sector Currency</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/project_detail/Elephants_And_Mice.html">Elephants & Mice</a> </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -78,10 +78,10 @@ class Header extends HTMLElement {
                                         <div class="col-sm-6 col-lg-3">
                                             <ul class="list-unstyled mb-4 mb-lg-0">
                                                 <li class="dropdown-header">Portfolio by Discipline</li>
-                                                <li> <a class="dropdown-item" href="/discipline/illustrator_projects.html">Adobe Illustrator</a> </li>
-                                                <li> <a class="dropdown-item" href="/discipline/photoshop_projects.html">Adobe Photoshop</a> </li>
-                                                <li> <a class="dropdown-item" href="/discipline/indesign_projects.html">Adobe InDesign</a> </li>
-                                                <li> <a class="dropdown-item" href="/discipline/studio_art_projects.html">Studio Art</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/discipline/illustrator_projects.html">Adobe Illustrator</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/discipline/photoshop_projects.html">Adobe Photoshop</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/discipline/indesign_projects.html">Adobe InDesign</a> </li>
+                                                <li> <a class="dropdown-item" href="/portfolio/discipline/studio_art_projects.html">Studio Art</a> </li>
                                             </ul>
                                         </div>
                                     </div>

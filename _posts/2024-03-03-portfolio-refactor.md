@@ -9,7 +9,7 @@ image: "/assets/images/blog/vscode.jpg"
 ---
 <p>This week, I finally spent some time wrapping my head around converting this site to use Jekyll as a static site generator. I started by branching the repository so that I could work without altering the currently published site. I then went through and identified the different layouts present in my site, and reduced each to its common code. I then created files for each of my projects with the front matter for each one. I need to go through and clean up the schema, because there is redundancy in some of the front matter fields. But for right now it's a great start and much easier to maintain than what I previously had. I also need to go through and flesh out the pages for the projects I added. </p>
 
-<img class="rounded my-4" src="/assets/images/blog/vscode.jpg" alt="">
+<img class="rounded my-4" src="{{ site.baseurl }}/assets/images/blog/vscode.jpg" alt="">
 
 <p>I still have not configured the Front Matter extension to manage the front matter for each of my projects. That's probably on my list for this coming week.</p>
 

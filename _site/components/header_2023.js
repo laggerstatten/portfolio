@@ -12,7 +12,7 @@ class Header extends HTMLElement {
 
                 <!-- Logo START -->
                 <a class="navbar-brand" href="../index.html">
-                    <img class="navbar-brand-item" src="../assets/images/logo.png" alt="Logo">
+                    <img class="navbar-brand-item" src="{{ site.baseurl }}/assets/images/logo.png" alt="Logo">
                 </a>
                 <!-- Logo END -->
     

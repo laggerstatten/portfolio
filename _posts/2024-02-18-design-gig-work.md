@@ -13,6 +13,6 @@ image: /assets/images/blog/indesign_book.jpg
 
 <p>The last time I did any pure design work (outside of class) was laying out a picture book for my friend who is an author/illustrator. While switching publishers for a second edition, she used Fiverr to have someone re-master the book. I don't think the original master images were provided to the Fiverr contractor, but regardless, the Fiverr contractor did a pretty terrible job. They just dragged the images into InDesign without regard for how page counts would work, where margins were, or how facing pages would interact. </p>
 
-<img class="rounded my-4" src="/assets/images/blog/indesign_book.jpg" alt="">
+<img class="rounded my-4" src="{{ site.baseurl }}/assets/images/blog/indesign_book.jpg" alt="">
 
 <p>I need to get onto one of the platforms and find a potential client. </p>

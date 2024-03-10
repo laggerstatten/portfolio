@@ -11,8 +11,8 @@ class MainHeader extends HTMLElement {
           <div class="container">
 
             <!-- Logo START -->
-            <a class="navbar-brand d-flex" href="/index.html">
-              <img class="navbar-brand-item" src="/assets/images/logo.png" alt="Logo">
+            <a class="navbar-brand d-flex" href="/portfolio/index.html">
+              <img class="navbar-brand-item" src="/portfolio/assets/images/logo.png" alt="Logo">
               <h6 class="smaller text-muted mb-0 ms-2 d-none d-sm-block">Eric<br>Schall</h6>
             </a>
             <!-- Logo END -->

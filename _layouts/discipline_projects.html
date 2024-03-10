@@ -28,8 +28,8 @@ Portfolio START -->
 			<div class="col-md-6">
 			  {% for i in (0..4) %}
 				{% if item["imagelinks#{i+1}"] %}
-				  <a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ item["imagelinks#{i+1}"] }}">
-					<img class="rounded" src="{{ item["images#{i+1}"] }}" alt="">
+				  <a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ site.baseurl }}/{{ item["imagelinks#{i+1}"] }}">
+					<img class="rounded" src="{{ site.baseurl }}/{{ item["images#{i+1}"] }}" alt="">
 				  </a>
 				{% endif %}
 			  {% endfor %}
@@ -66,8 +66,8 @@ Portfolio START -->
 			<div class="col-md-6 order-1 order-md-last">
 			  {% for i in (0..4) %}
 				{% if item["imagelinks#{i+1}"] %}
-				  <a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ item["imagelinks#{i+1}"] }}">
-					<img class="rounded" src="{{ item["images#{i+1}"] }}" alt="">
+				  <a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ site.baseurl }}/{{ item["imagelinks#{i+1}"] }}">
+					<img class="rounded" src="{{ site.baseurl }}/{{ item["images#{i+1}"] }}" alt="">
 				  </a>
 				{% endif %}
 			  {% endfor %}

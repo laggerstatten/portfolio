@@ -31,8 +31,8 @@ Portfolio START -->
 		<div class="row mb-4" data-sticky-container id="{{ item.divid }}">
 			<div class="col-md-6">
 				{% for image_index in (0..item.images.size) %}
-				<a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ item.imagelinks[image_index] }}">
-					<img class="rounded" src="{{ item.images[image_index] }}" alt="">
+				<a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ site.baseurl }}/{{ item.imagelinks[image_index] }}">
+					<img class="rounded" src="{{ site.baseurl }}/{{ item.images[image_index] }}" alt="">
 				</a>
 				{% endfor %}
 			</div>
@@ -63,8 +63,8 @@ Portfolio START -->
 			</div>
 			<div class="col-md-6 order-1 order-md-last">
 				{% for image_index in (0..item.images.size) %}
-				<a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ item.imagelinks[image_index] }}">
-					<img class="rounded" src="{{ item.images[image_index] }}" alt="">
+				<a class="mb-4 d-block" data-glightbox data-gallery="portfolio-req" href="{{ site.baseurl }}/{{ item.imagelinks[image_index] }}">
+					<img class="rounded" src="{{ site.baseurl }}/{{ item.images[image_index] }}" alt="">
 				</a>
 				{% endfor %}
 			</div>
