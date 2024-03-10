@@ -48,7 +48,8 @@ Portfolio START -->
 		<!-- Portfolio Items START -->
 		<div class="row filter-container overflow-hidden" data-isotope='{"layoutMode": "masonry"}'>
 
-			{% for item in site.portfolio %}
+			{% assign portfolio = site.portfolio | sort: "display_order" %}
+			{% for item in portfolio %}
 				<!-- Card item START -->
 				<div class="{{ item.class }}" data-category="all">
 					<div class="card">
