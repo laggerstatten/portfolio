@@ -59,7 +59,8 @@ Portfolio START-->
 		<!-- Portfolio -->
 		<div class="row g-0">
 
-			{% for item in site.project_detail %}
+			{% assign project_detail = site.project_detail | sort: "display_order" %}
+			{% for item in project_detail %}
 				<!-- Card item START -->
 				<div class="{{ item.cardclass }}">
 					<div class="card border-0 rounded bg-transparent ">
