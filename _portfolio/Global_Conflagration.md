@@ -5,4 +5,5 @@ link: "project_detail/Global_Conflagration.html"
 focus: Book Jacket
 name: "Global Conflagration"
 description: A book jacket for an atlas of the Cold War era.
+display_order: 5
 ---

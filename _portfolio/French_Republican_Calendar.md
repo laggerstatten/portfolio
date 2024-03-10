@@ -5,4 +5,5 @@ link: "project_detail/French_Republican_Calendar.html"
 focus: Object Photography
 name: French Republican Calendar
 description: Photography and composition of lettering and backgrounds for a calendar.
+display_order: 2
 ---

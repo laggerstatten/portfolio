@@ -5,4 +5,5 @@ link: "project_detail/Generic_Aquarium.html"
 focus: Website
 name: Generic Aquarium
 description: A website using various CSS animations.
+display_order: 6
 ---

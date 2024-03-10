@@ -8,6 +8,7 @@ focus1: Travel Magazine
 name: |
     "Western Destinations"
 link: "project_detail/Western_Destinations.html"
+display_order: 1
 
 title: |
     "Western Destinations"

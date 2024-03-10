@@ -5,4 +5,5 @@ link: "discipline/illustrator_projects.html#iconic_explorers"
 focus: Poster
 name: Iconic Explorers
 description: Some iconic explorers of the last few centuries.
+display_order: 19
 ---

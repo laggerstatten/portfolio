@@ -7,6 +7,7 @@ cardtext: "display-9 mb-0 text-body font-alt fw-normal"
 focus1: Website
 name: Generic Aquarium
 link: "project_detail/Generic_Aquarium.html"
+display_order: 7
 
 title: Generic Aquarium
 interactive.description: An interactive webpage for any aquarium.

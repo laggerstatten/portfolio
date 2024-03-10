@@ -5,6 +5,7 @@ link: "discipline/studio_art_projects.html#how_to_get_over_there"
 focus: Media Exploration
 name: How To Get Over There
 description: The same design replicated four times across different substrate and media.
+display_order: 1
 
 divid: how_to_get_over_there
 title: <h3>Quilling, Gauche, Embroidery</h3>

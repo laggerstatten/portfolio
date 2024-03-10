@@ -5,6 +5,7 @@ link: "discipline/indesign_projects.html#easy_eats"
 focus: Branding
 name: Brookshire Brothers "Easy Eats"
 description: An exercise in producing brand collateral.
+display_order: 1
 
 divid: "easy_eats"
 title: <h3>Brookshire Brothers "Easy Eats"</h3>

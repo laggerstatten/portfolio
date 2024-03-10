@@ -25,7 +25,8 @@ Portfolio START -->
 <section class="pt-5 pb-0">
 	<div class="container">
 
-		{% for item in site.portfolio_illustrator %}
+		{% assign portfolio_illustrator = site.portfolio_illustrator | sort: "display_order" %}
+		{% for item in portfolio_illustrator %}
 		{% assign tmp = forloop.index | modulo: 2 %}
 		{% if tmp == 1 %}
 		<div class="row mb-4" data-sticky-container id="{{ item.divid }}">

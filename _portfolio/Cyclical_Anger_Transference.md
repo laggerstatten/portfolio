@@ -5,4 +5,5 @@ link: "project_detail/Cyclical_Anger_Transference.html"
 focus: Comic Art
 name: Cyclical Anger Transference
 description: A new take on Richard Sargent's painting using a cyclic comic.
+display_order: 7
 ---

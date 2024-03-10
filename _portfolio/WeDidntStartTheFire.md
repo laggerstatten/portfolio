@@ -5,4 +5,5 @@ link: "project_detail/WeDidntStartTheFire.html"
 focus: Interactive Media
 name: We Didn't Start the Fire
 description: An interactive timeline using Adobe Animate.
+display_order: 9
 ---

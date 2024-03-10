@@ -5,6 +5,7 @@ link: "discipline/illustrator_projects.html#cutting_edge_adventures"
 focus: Branding
 name: Cutting Edge Adventures
 description: A poster and product packaging.
+display_order: 1
 
 divid: "cutting_edge_adventures"
 title: <h3>Cutting Edge Adventures</h3>

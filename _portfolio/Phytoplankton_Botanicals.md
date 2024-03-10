@@ -5,4 +5,5 @@ link: "discipline/studio_art_projects.html#phytoplankton_botanicals"
 focus: Botanical Illustration
 name: Phytoplankton Botanicals
 description: An attempt to capture Sara Boccaccini Meadows' style.
+display_order: 17
 ---

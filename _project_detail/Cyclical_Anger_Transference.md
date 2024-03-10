@@ -7,6 +7,7 @@ cardtext: "display-9 mb-0 text-white font-alt fw-normal"
 focus1: Comic Art
 name: Cyclical Anger Transference
 link: "project_detail/Cyclical_Anger_Transference.html"
+display_order: 6
 
 title: Cyclical Anger Transference
 videourl: https://player.vimeo.com/video/774970501

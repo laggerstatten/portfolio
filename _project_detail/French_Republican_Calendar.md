@@ -7,6 +7,7 @@ cardtext: "display-9 mb-0 text-white font-alt fw-normal"
 focus1: Object Photography
 name: French Republican Calendar
 link: "project_detail/French_Republican_Calendar.html"
+display_order: 5
 
 title: French Republican Calendar
 videourl: https://player.vimeo.com/video/774970501

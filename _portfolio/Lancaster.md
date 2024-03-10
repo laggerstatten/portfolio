@@ -5,4 +5,5 @@ link: "discipline/interactive_projects.html#lancaster"
 focus: Bouncing and Hopping Animation
 name: Lancaster Animation
 description: An exercise in animating bouncing and hopping balls.
+display_order: 21
 ---

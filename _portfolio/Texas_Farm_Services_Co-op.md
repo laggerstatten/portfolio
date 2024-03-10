@@ -5,4 +5,5 @@ link: "discipline/illustrator_projects.html#tfsc"
 focus: Magazine Ads
 name: Texas Farm Services Co-op
 description: An early ad series.
+display_order: 26
 ---

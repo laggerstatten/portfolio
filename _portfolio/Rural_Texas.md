@@ -5,4 +5,5 @@ link: "project_detail/Rural_Texas.html"
 focus: Wall Calendar
 name: Rural Texas
 description: A 12-month wall calendar featuring scenes of rural Texas.
+display_order: 3
 ---

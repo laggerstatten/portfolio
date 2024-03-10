@@ -7,6 +7,7 @@ cardtext: "display-9 mb-0 text-white font-alt fw-normal"
 focus1: Currency Redesign
 name: Primary Sector Currency
 link: "project_detail/Primary_Sector_Currency.html"
+display_order: 10
 
 title: Primary Sector Currency
 videourl: https://player.vimeo.com/video/775135315

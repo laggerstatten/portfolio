@@ -5,6 +5,7 @@ link: "discipline/illustrator_projects.html#iconic_explorers"
 focus: Poster
 name: Iconic Explorers
 description: Some iconic explorers of the last few centuries.
+display_order: 3
 
 divid: "iconic_explorers"
 title: <h3>Explorer Icon Poster</h3>

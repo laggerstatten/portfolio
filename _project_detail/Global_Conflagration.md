@@ -8,6 +8,7 @@ focus1: Book Jacket
 name: |
   "Global Conflagration"
 link: "project_detail/Global_Conflagration.html"
+display_order: 4
 
 title: |
   "Global Conflagration"

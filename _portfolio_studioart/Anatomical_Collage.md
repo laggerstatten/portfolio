@@ -5,6 +5,7 @@ link: "discipline/studio_art_projects.html#blackandwhite"
 focus: Drawing
 name: Anatomical Collage
 description: A final drawing for a drawing course.
+display_order: 2
 
 divid: blackandwhite
 title: <h3>Pencil, Charcoal, Marker, Conte Crayon</h3>

@@ -7,6 +7,7 @@ cardtext: "display-9 mb-0 text-white font-alt fw-normal"
 focus1: Interactive Storybook
 name: Elephants & Mice
 link: "project_detail/Elephants_And_Mice.html"
+display_order: 11
 
 title: Elephants & Mice
 description: An interactive storybook from the Panchatantra.

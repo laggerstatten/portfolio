@@ -5,4 +5,5 @@ link: "discipline/illustrator_projects.html#cutting_edge_adventures"
 focus: Branding
 name: Cutting Edge Adventures
 description: A poster and product packaging.
+display_order: 18
 ---

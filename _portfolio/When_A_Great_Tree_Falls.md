@@ -5,4 +5,5 @@ link: "discipline/photoshop_projects.html#when_a_great_tree_falls"
 focus: Sky Replacement
 name: When a Great Tree Falls
 description: An exercise in Photoshop sky replacement.
+display_order: 28
 ---

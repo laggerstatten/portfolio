@@ -5,4 +5,5 @@ link: "discipline/interactive_projects.html#cryptic_labyrinth"
 focus: Game Design
 name: Cryptic Labyrinth
 description: A top-down dungeon crawler with four levels.
+display_order: 16
 ---

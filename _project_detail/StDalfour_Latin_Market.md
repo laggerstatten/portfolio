@@ -7,6 +7,7 @@ cardtext: "display-9 mb-0 text-white font-alt fw-normal"
 focus1: Product Packaging
 name: St. Dalfour Latin Market
 link: "project_detail/StDalfour_Latin_Market.html"
+display_order: 8
 
 title: St. Dalfour Latin Market
 videourl: https://player.vimeo.com/video/774973270

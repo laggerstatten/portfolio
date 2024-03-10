@@ -5,4 +5,5 @@ link: "discipline/indesign_projects.html#turkey_town"
 focus: Book Cover
 name: Turkey Town
 description: An exercise in integrating Illustrator and InDesign.
+display_order: 25
 ---

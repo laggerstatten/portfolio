@@ -5,4 +5,5 @@ link: "discipline/studio_art_projects.html#gauche"
 focus: Drawing
 name: Little River Canyon in Gauche
 description: An attempt to capture Jem Magbanua's style.
+display_order: 15
 ---

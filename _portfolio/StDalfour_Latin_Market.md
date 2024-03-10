@@ -5,4 +5,5 @@ link: "project_detail/StDalfour_Latin_Market.html"
 focus: Product Packaging
 name: St. Dalfour Latin Market
 description: Four labels for Latin jelly flavors.
+display_order: 8
 ---

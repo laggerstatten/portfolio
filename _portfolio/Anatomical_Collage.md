@@ -5,4 +5,5 @@ link: "discipline/studio_art_projects.html#blackandwhite"
 focus: Drawing
 name: Anatomical Collage
 description: A final drawing for a drawing course.
+display_order: 14
 ---

@@ -7,6 +7,7 @@ cardtext: "display-9 mb-0 text-body font-alt fw-normal"
 focus1: Product Packaging
 name: H-E-B Vietnamese Own-Brand
 link: "project_detail/HEB_Vietnamese_OwnBrand.html"
+display_order: 3
 
 title: H-E-B Vietnamese Own-Brand
 videourl: https://player.vimeo.com/video/774972001

@@ -5,6 +5,7 @@ link: discipline/photoshop_projects.html#compositing
 focus: Compositing
 name: After Industry
 description: Building skills in photo compositing.
+display_order: 1
 
 divid: "compositing"
 title: <h3>Compositing</h3>

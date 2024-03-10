@@ -7,6 +7,7 @@ cardtext: "display-9 mb-0 text-white font-alt fw-normal"
 focus1: Wall Calendar
 name: Rural Texas
 link: "project_detail/Rural_Texas.html"
+display_order: 2
 
 title: Rural Texas
 videourl: https://player.vimeo.com/video/774970501
